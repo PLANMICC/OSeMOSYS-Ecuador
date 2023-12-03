@@ -1,0 +1,1 @@
+En A-O_Parametrization se agrega manualmente la tecnologia REST_PI tal como lo dijo Luis. Si se corre A1_ModelStructure.py se sobreescribe y borra todo incluyendo esa tec extra
