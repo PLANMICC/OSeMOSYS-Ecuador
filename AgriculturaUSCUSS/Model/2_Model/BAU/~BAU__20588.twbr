@@ -1,0 +1,3251 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.21.0818.1843                               -->
+<workbook source-build='2021.2.2 (20212.21.0818.1843)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='data_land_BAU_Output' inline='true' name='federated.17e1xze1qxdrdq14znl100v7nsvu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='data_land_BAU_Output________' name='textscan.0mqyp0707w5693111a9sd1rvvsnu'>
+            <connection class='textscan' directory='C:/Users/jaman/OneDrive/Escritorio/1_AFOLU/2_Model/BAU' filename='data_land_BAU_Output________.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0mqyp0707w5693111a9sd1rvvsnu' name='data_land_BAU_Output________.csv' table='[data_land_BAU_Output________#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Run.ID' ordinal='0' />
+            <column datatype='string' name='Fuel' ordinal='1' />
+            <column datatype='string' name='Fuel.DESCRIPTION' ordinal='2' />
+            <column datatype='string' name='Technology' ordinal='3' />
+            <column datatype='string' name='Technology.DESCRIPTION' ordinal='4' />
+            <column datatype='string' name='Emission' ordinal='5' />
+            <column datatype='string' name='Emission.DESCRIPTION' ordinal='6' />
+            <column datatype='integer' name='Year' ordinal='7' />
+            <column datatype='string' name='RateOfDemand' ordinal='8' />
+            <column datatype='real' name='Demand' ordinal='9' />
+            <column datatype='string' name='NumberOfNewTechnologyUnits' ordinal='10' />
+            <column datatype='real' name='NewCapacity' ordinal='11' />
+            <column datatype='real' name='AccumulatedNewCapacity' ordinal='12' />
+            <column datatype='real' name='TotalCapacityAnnual' ordinal='13' />
+            <column datatype='real' name='RateOfActivity' ordinal='14' />
+            <column datatype='real' name='RateOfTotalActivity' ordinal='15' />
+            <column datatype='real' name='TotalTechnologyAnnualActivity' ordinal='16' />
+            <column datatype='real' name='TotalAnnualTechnologyActivityByMode' ordinal='17' />
+            <column datatype='string' name='TotalTechnologyModelPeriodActivity' ordinal='18' />
+            <column datatype='string' name='RateOfProductionByTechnologyByMode' ordinal='19' />
+            <column datatype='string' name='RateOfProductionByTechnology' ordinal='20' />
+            <column datatype='real' name='ProductionByTechnology' ordinal='21' />
+            <column datatype='real' name='ProductionByTechnologyAnnual' ordinal='22' />
+            <column datatype='string' name='RateOfProduction' ordinal='23' />
+            <column datatype='string' name='Production' ordinal='24' />
+            <column datatype='string' name='RateOfUseByTechnologyByMode' ordinal='25' />
+            <column datatype='string' name='RateOfUseByTechnology' ordinal='26' />
+            <column datatype='string' name='UseByTechnologyAnnual' ordinal='27' />
+            <column datatype='string' name='UseByTechnology' ordinal='28' />
+            <column datatype='string' name='UseAnnual' ordinal='29' />
+            <column datatype='string' name='CapitalInvestment' ordinal='30' />
+            <column datatype='string' name='DiscountedCapitalInvestment' ordinal='31' />
+            <column datatype='string' name='SalvageValue' ordinal='32' />
+            <column datatype='string' name='DiscountedSalvageValue' ordinal='33' />
+            <column datatype='string' name='OperatingCost' ordinal='34' />
+            <column datatype='string' name='DiscountedOperatingCost' ordinal='35' />
+            <column datatype='string' name='AnnualVariableOperatingCost' ordinal='36' />
+            <column datatype='string' name='AnnualFixedOperatingCost' ordinal='37' />
+            <column datatype='string' name='TotalDiscountedCostByTechnology' ordinal='38' />
+            <column datatype='string' name='TotalDiscountedCost' ordinal='39' />
+            <column datatype='string' name='TotalCapacityInReserveMargin' ordinal='40' />
+            <column datatype='string' name='DemandNeedingReserveMargin' ordinal='41' />
+            <column datatype='string' name='TotalREProductionAnnual' ordinal='42' />
+            <column datatype='string' name='RETotalProductionOfTargetFuelAnnual' ordinal='43' />
+            <column datatype='string' name='AnnualTechnologyEmissionByMode' ordinal='44' />
+            <column datatype='real' name='AnnualTechnologyEmission' ordinal='45' />
+            <column datatype='string' name='AnnualTechnologyEmissionPenaltyByEmission' ordinal='46' />
+            <column datatype='string' name='AnnualTechnologyEmissionsPenalty' ordinal='47' />
+            <column datatype='string' name='DiscountedTechnologyEmissionsPenalty' ordinal='48' />
+            <column datatype='string' name='AnnualEmissions' ordinal='49' />
+            <column datatype='string' name='ModelPeriodEmissions' ordinal='50' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0mqyp0707w5693111a9sd1rvvsnu' name='data_land_BAU_Output________.csv' table='[data_land_BAU_Output________#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Run.ID' ordinal='0' />
+            <column datatype='string' name='Fuel' ordinal='1' />
+            <column datatype='string' name='Fuel.DESCRIPTION' ordinal='2' />
+            <column datatype='string' name='Technology' ordinal='3' />
+            <column datatype='string' name='Technology.DESCRIPTION' ordinal='4' />
+            <column datatype='string' name='Emission' ordinal='5' />
+            <column datatype='string' name='Emission.DESCRIPTION' ordinal='6' />
+            <column datatype='integer' name='Year' ordinal='7' />
+            <column datatype='string' name='RateOfDemand' ordinal='8' />
+            <column datatype='real' name='Demand' ordinal='9' />
+            <column datatype='string' name='NumberOfNewTechnologyUnits' ordinal='10' />
+            <column datatype='real' name='NewCapacity' ordinal='11' />
+            <column datatype='real' name='AccumulatedNewCapacity' ordinal='12' />
+            <column datatype='real' name='TotalCapacityAnnual' ordinal='13' />
+            <column datatype='real' name='RateOfActivity' ordinal='14' />
+            <column datatype='real' name='RateOfTotalActivity' ordinal='15' />
+            <column datatype='real' name='TotalTechnologyAnnualActivity' ordinal='16' />
+            <column datatype='real' name='TotalAnnualTechnologyActivityByMode' ordinal='17' />
+            <column datatype='string' name='TotalTechnologyModelPeriodActivity' ordinal='18' />
+            <column datatype='string' name='RateOfProductionByTechnologyByMode' ordinal='19' />
+            <column datatype='string' name='RateOfProductionByTechnology' ordinal='20' />
+            <column datatype='real' name='ProductionByTechnology' ordinal='21' />
+            <column datatype='real' name='ProductionByTechnologyAnnual' ordinal='22' />
+            <column datatype='string' name='RateOfProduction' ordinal='23' />
+            <column datatype='string' name='Production' ordinal='24' />
+            <column datatype='string' name='RateOfUseByTechnologyByMode' ordinal='25' />
+            <column datatype='string' name='RateOfUseByTechnology' ordinal='26' />
+            <column datatype='string' name='UseByTechnologyAnnual' ordinal='27' />
+            <column datatype='string' name='UseByTechnology' ordinal='28' />
+            <column datatype='string' name='UseAnnual' ordinal='29' />
+            <column datatype='string' name='CapitalInvestment' ordinal='30' />
+            <column datatype='string' name='DiscountedCapitalInvestment' ordinal='31' />
+            <column datatype='string' name='SalvageValue' ordinal='32' />
+            <column datatype='string' name='DiscountedSalvageValue' ordinal='33' />
+            <column datatype='string' name='OperatingCost' ordinal='34' />
+            <column datatype='string' name='DiscountedOperatingCost' ordinal='35' />
+            <column datatype='string' name='AnnualVariableOperatingCost' ordinal='36' />
+            <column datatype='string' name='AnnualFixedOperatingCost' ordinal='37' />
+            <column datatype='string' name='TotalDiscountedCostByTechnology' ordinal='38' />
+            <column datatype='string' name='TotalDiscountedCost' ordinal='39' />
+            <column datatype='string' name='TotalCapacityInReserveMargin' ordinal='40' />
+            <column datatype='string' name='DemandNeedingReserveMargin' ordinal='41' />
+            <column datatype='string' name='TotalREProductionAnnual' ordinal='42' />
+            <column datatype='string' name='RETotalProductionOfTargetFuelAnnual' ordinal='43' />
+            <column datatype='string' name='AnnualTechnologyEmissionByMode' ordinal='44' />
+            <column datatype='real' name='AnnualTechnologyEmission' ordinal='45' />
+            <column datatype='string' name='AnnualTechnologyEmissionPenaltyByEmission' ordinal='46' />
+            <column datatype='string' name='AnnualTechnologyEmissionsPenalty' ordinal='47' />
+            <column datatype='string' name='DiscountedTechnologyEmissionsPenalty' ordinal='48' />
+            <column datatype='string' name='AnnualEmissions' ordinal='49' />
+            <column datatype='string' name='ModelPeriodEmissions' ordinal='50' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Run.ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Run.ID]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>Run.ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fuel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fuel]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>Fuel</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fuel.DESCRIPTION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fuel.DESCRIPTION]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>Fuel.DESCRIPTION</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Technology</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Technology]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>Technology</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Technology.DESCRIPTION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Technology.DESCRIPTION]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>Technology.DESCRIPTION</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Emission</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Emission]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>Emission</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Emission.DESCRIPTION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Emission.DESCRIPTION]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>Emission.DESCRIPTION</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RateOfDemand</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RateOfDemand]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>RateOfDemand</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Demand</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Demand]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>Demand</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumberOfNewTechnologyUnits</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NumberOfNewTechnologyUnits]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>NumberOfNewTechnologyUnits</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NewCapacity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NewCapacity]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>NewCapacity</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AccumulatedNewCapacity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AccumulatedNewCapacity]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>AccumulatedNewCapacity</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalCapacityAnnual</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalCapacityAnnual]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>TotalCapacityAnnual</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RateOfActivity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RateOfActivity]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>RateOfActivity</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RateOfTotalActivity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RateOfTotalActivity]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>RateOfTotalActivity</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalTechnologyAnnualActivity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalTechnologyAnnualActivity]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>TotalTechnologyAnnualActivity</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalAnnualTechnologyActivityByMode</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalAnnualTechnologyActivityByMode]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>TotalAnnualTechnologyActivityByMode</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalTechnologyModelPeriodActivity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TotalTechnologyModelPeriodActivity]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>TotalTechnologyModelPeriodActivity</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RateOfProductionByTechnologyByMode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RateOfProductionByTechnologyByMode]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>RateOfProductionByTechnologyByMode</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RateOfProductionByTechnology</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RateOfProductionByTechnology]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>RateOfProductionByTechnology</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductionByTechnology</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ProductionByTechnology]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>ProductionByTechnology</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductionByTechnologyAnnual</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ProductionByTechnologyAnnual]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>ProductionByTechnologyAnnual</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RateOfProduction</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RateOfProduction]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>RateOfProduction</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Production</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Production]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>Production</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RateOfUseByTechnologyByMode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RateOfUseByTechnologyByMode]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>RateOfUseByTechnologyByMode</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RateOfUseByTechnology</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RateOfUseByTechnology]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>RateOfUseByTechnology</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UseByTechnologyAnnual</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[UseByTechnologyAnnual]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>UseByTechnologyAnnual</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UseByTechnology</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[UseByTechnology]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>UseByTechnology</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UseAnnual</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[UseAnnual]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>UseAnnual</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CapitalInvestment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CapitalInvestment]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>CapitalInvestment</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DiscountedCapitalInvestment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DiscountedCapitalInvestment]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>DiscountedCapitalInvestment</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SalvageValue</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SalvageValue]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>SalvageValue</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DiscountedSalvageValue</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DiscountedSalvageValue]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>DiscountedSalvageValue</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OperatingCost</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OperatingCost]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>OperatingCost</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DiscountedOperatingCost</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DiscountedOperatingCost]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>DiscountedOperatingCost</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AnnualVariableOperatingCost</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AnnualVariableOperatingCost]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>AnnualVariableOperatingCost</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AnnualFixedOperatingCost</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AnnualFixedOperatingCost]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>AnnualFixedOperatingCost</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalDiscountedCostByTechnology</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TotalDiscountedCostByTechnology]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>TotalDiscountedCostByTechnology</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalDiscountedCost</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TotalDiscountedCost]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>TotalDiscountedCost</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalCapacityInReserveMargin</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TotalCapacityInReserveMargin]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>TotalCapacityInReserveMargin</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DemandNeedingReserveMargin</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DemandNeedingReserveMargin]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>DemandNeedingReserveMargin</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalREProductionAnnual</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TotalREProductionAnnual]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>TotalREProductionAnnual</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RETotalProductionOfTargetFuelAnnual</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RETotalProductionOfTargetFuelAnnual]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>RETotalProductionOfTargetFuelAnnual</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AnnualTechnologyEmissionByMode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AnnualTechnologyEmissionByMode]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>AnnualTechnologyEmissionByMode</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AnnualTechnologyEmission</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AnnualTechnologyEmission]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>AnnualTechnologyEmission</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AnnualTechnologyEmissionPenaltyByEmission</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AnnualTechnologyEmissionPenaltyByEmission]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>AnnualTechnologyEmissionPenaltyByEmission</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AnnualTechnologyEmissionsPenalty</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AnnualTechnologyEmissionsPenalty]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>AnnualTechnologyEmissionsPenalty</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DiscountedTechnologyEmissionsPenalty</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DiscountedTechnologyEmissionsPenalty]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>DiscountedTechnologyEmissionsPenalty</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AnnualEmissions</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AnnualEmissions]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>AnnualEmissions</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ModelPeriodEmissions</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ModelPeriodEmissions]</local-name>
+            <parent-name>[data_land_BAU_Output________.csv]</parent-name>
+            <remote-alias>ModelPeriodEmissions</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Accumulated New Capacity' datatype='real' name='[AccumulatedNewCapacity]' role='measure' type='quantitative' />
+      <column caption='Annual Emissions' datatype='string' name='[AnnualEmissions]' role='dimension' type='nominal' />
+      <column caption='Annual Fixed Operating Cost' datatype='string' name='[AnnualFixedOperatingCost]' role='dimension' type='nominal' />
+      <column caption='Annual Technology Emission By Mode' datatype='string' name='[AnnualTechnologyEmissionByMode]' role='dimension' type='nominal' />
+      <column caption='Annual Technology Emission Penalty By Emission' datatype='string' name='[AnnualTechnologyEmissionPenaltyByEmission]' role='dimension' type='nominal' />
+      <column caption='Annual Technology Emission' datatype='real' name='[AnnualTechnologyEmission]' role='dimension' type='ordinal' />
+      <column caption='Annual Technology Emissions Penalty' datatype='string' name='[AnnualTechnologyEmissionsPenalty]' role='dimension' type='nominal' />
+      <column caption='Annual Variable Operating Cost' datatype='string' name='[AnnualVariableOperatingCost]' role='dimension' type='nominal' />
+      <column caption='Capital Investment' datatype='string' name='[CapitalInvestment]' role='dimension' type='nominal' />
+      <column caption='Demand Needing Reserve Margin' datatype='string' name='[DemandNeedingReserveMargin]' role='dimension' type='nominal' />
+      <column caption='Discounted Capital Investment' datatype='string' name='[DiscountedCapitalInvestment]' role='dimension' type='nominal' />
+      <column caption='Discounted Operating Cost' datatype='string' name='[DiscountedOperatingCost]' role='dimension' type='nominal' />
+      <column caption='Discounted Salvage Value' datatype='string' name='[DiscountedSalvageValue]' role='dimension' type='nominal' />
+      <column caption='Discounted Technology Emissions Penalty' datatype='string' name='[DiscountedTechnologyEmissionsPenalty]' role='dimension' type='nominal' />
+      <column caption='Emission1' datatype='string' name='[Emission]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;co2_cultivos&quot;' value='Cultivos de arroz' />
+          <alias key='&quot;co2_ferm&quot;' value='Fermentación entérica, ganado' />
+          <alias key='&quot;co2_gallinas&quot;' value='Gallinas' />
+          <alias key='&quot;co2_manure&quot;' value='Manejo de estiércol, ganado' />
+          <alias key='&quot;co2_remociones&quot;' value='Remociones' />
+        </aliases>
+      </column>
+      <column caption='Fuel1' datatype='string' name='[Fuel]' role='dimension' type='nominal' />
+      <column caption='Model Period Emissions' datatype='string' name='[ModelPeriodEmissions]' role='dimension' type='nominal' />
+      <column caption='New Capacity' datatype='real' name='[NewCapacity]' role='measure' type='quantitative' />
+      <column caption='Number Of New Technology Units' datatype='string' name='[NumberOfNewTechnologyUnits]' role='dimension' type='nominal' />
+      <column caption='Operating Cost' datatype='string' name='[OperatingCost]' role='dimension' type='nominal' />
+      <column caption='Production By Technology Annual' datatype='real' name='[ProductionByTechnologyAnnual]' role='measure' type='quantitative' />
+      <column caption='Production By Technology' datatype='real' name='[ProductionByTechnology]' role='dimension' type='quantitative' />
+      <column caption='RE Total Production Of Target Fuel Annual' datatype='string' name='[RETotalProductionOfTargetFuelAnnual]' role='dimension' type='nominal' />
+      <column caption='Rate Of Activity' datatype='real' name='[RateOfActivity]' role='measure' type='quantitative' />
+      <column caption='Rate Of Demand' datatype='string' name='[RateOfDemand]' role='dimension' type='nominal' />
+      <column caption='Rate Of Production By Technology By Mode' datatype='string' name='[RateOfProductionByTechnologyByMode]' role='dimension' type='nominal' />
+      <column caption='Rate Of Production By Technology' datatype='string' name='[RateOfProductionByTechnology]' role='dimension' type='nominal' />
+      <column caption='Rate Of Production' datatype='string' name='[RateOfProduction]' role='dimension' type='nominal' />
+      <column caption='Rate Of Total Activity' datatype='real' name='[RateOfTotalActivity]' role='measure' type='quantitative' />
+      <column caption='Rate Of Use By Technology By Mode' datatype='string' name='[RateOfUseByTechnologyByMode]' role='dimension' type='nominal' />
+      <column caption='Rate Of Use By Technology' datatype='string' name='[RateOfUseByTechnology]' role='dimension' type='nominal' />
+      <column caption='Salvage Value' datatype='string' name='[SalvageValue]' role='dimension' type='nominal' />
+      <column caption='Technology1' datatype='string' name='[Technology]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;Cafe&quot;' value='Café' />
+          <alias key='&quot;Cana&quot;' value='Caña de azúcar' />
+          <alias key='&quot;Floricolas&quot;' value='Flores' />
+          <alias key='&quot;Maiz&quot;' value='Maíz' />
+          <alias key='&quot;Otras_tierras&quot;' value='Otras tierras' />
+          <alias key='&quot;Otros_cultivos&quot;' value='Otros cultivos' />
+          <alias key='&quot;Tierra_agropecuaria&quot;' value='Tierra agropecuaria' />
+          <alias key='&quot;Tuberculos&quot;' value='Tubérculos' />
+          <alias key='&quot;Zona_atropica&quot;' value='Zona atrópica' />
+        </aliases>
+      </column>
+      <column caption='Total Annual Technology Activity By Mode' datatype='real' name='[TotalAnnualTechnologyActivityByMode]' role='measure' type='quantitative' />
+      <column caption='Total Capacity Annual' datatype='real' name='[TotalCapacityAnnual]' role='measure' type='quantitative' />
+      <column caption='Total Capacity In Reserve Margin' datatype='string' name='[TotalCapacityInReserveMargin]' role='dimension' type='nominal' />
+      <column caption='Total Discounted Cost By Technology' datatype='string' name='[TotalDiscountedCostByTechnology]' role='dimension' type='nominal' />
+      <column caption='Total Discounted Cost' datatype='string' name='[TotalDiscountedCost]' role='dimension' type='nominal' />
+      <column caption='Total RE Production Annual' datatype='string' name='[TotalREProductionAnnual]' role='dimension' type='nominal' />
+      <column caption='Total Technology Annual Activity' datatype='real' name='[TotalTechnologyAnnualActivity]' role='measure' type='quantitative' />
+      <column caption='Total Technology Model Period Activity' datatype='string' name='[TotalTechnologyModelPeriodActivity]' role='dimension' type='nominal' />
+      <column caption='Use Annual' datatype='string' name='[UseAnnual]' role='dimension' type='nominal' />
+      <column caption='Use By Technology Annual' datatype='string' name='[UseByTechnologyAnnual]' role='dimension' type='nominal' />
+      <column caption='Use By Technology' datatype='string' name='[UseByTechnology]' role='dimension' type='nominal' />
+      <column caption='Year1' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='data_land_BAU_Output________.csv' datatype='table' name='[__tableau_internal_object_id__].[data_land_BAU_Output________.csv_6E231250FD38429A82D8EFCE753B54E7]' role='measure' type='quantitative' />
+      <column-instance column='[Fuel]' derivation='None' name='[none:Fuel:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Technology]' derivation='None' name='[none:Technology:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Technology:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Cereales&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Exp_Legumbres&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Imp_Legumbres&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Exp_Arroz&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Imp_Arroz&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Otras_tierras&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Plantacion_forestal&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Exp_Cana&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Imp_Cana&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Pastizales&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Bosque&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Exp_Tuberculos&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Imp_Soya&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Legumbres&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Exp_Maiz&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Floricolas&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Imp_Maiz&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Cacao&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Exp_Cereales&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Imp_Cereales&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Verduras&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Arroz&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Exp_Banano&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Imp_Banano&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Soya&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Cafe&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Exp_Floricolas&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Imp_Floricolas&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Exp_Verduras&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Imp_Leche&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Imp_Tuberculos&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Maiz&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Imp_Verduras&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Palma&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Tuberculos&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Otros_cultivos&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Exp_Palma&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Humedal&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Imp_Carne&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Imp_Palma&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Tierra_agropecuaria&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Cana&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Exp_Fruta&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Imp_Fruta&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Bosque_nativo&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Exp_Cacao&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Imp_Cacao&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Zona_atropica&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Palmito&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Exp_Palmito&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Fruta&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Imp_Palmito&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Banano&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Exp_Cafe&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Imp_Cafe&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Fuel:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Dem_Legumbres&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Dem_Arroz&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Dem_Cana&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Dem_Soya&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Dem_Maiz&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Dem_Cereales&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Dem_Banano&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Dem_Floricolas&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Dem_Leche&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Dem_Tuberculos&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Leche&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Dem_Verduras&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Carne&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Dem_Carne&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Dem_Palma&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Dem_Fruta&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Dem_Cacao&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Dem_Palmito&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Dem_Cafe&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='data_land_BAU_Output________.csv' id='data_land_BAU_Output________.csv_6E231250FD38429A82D8EFCE753B54E7'>
+            <properties context=''>
+              <relation connection='textscan.0mqyp0707w5693111a9sd1rvvsnu' name='data_land_BAU_Output________.csv' table='[data_land_BAU_Output________#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Run.ID' ordinal='0' />
+                  <column datatype='string' name='Fuel' ordinal='1' />
+                  <column datatype='string' name='Fuel.DESCRIPTION' ordinal='2' />
+                  <column datatype='string' name='Technology' ordinal='3' />
+                  <column datatype='string' name='Technology.DESCRIPTION' ordinal='4' />
+                  <column datatype='string' name='Emission' ordinal='5' />
+                  <column datatype='string' name='Emission.DESCRIPTION' ordinal='6' />
+                  <column datatype='integer' name='Year' ordinal='7' />
+                  <column datatype='string' name='RateOfDemand' ordinal='8' />
+                  <column datatype='real' name='Demand' ordinal='9' />
+                  <column datatype='string' name='NumberOfNewTechnologyUnits' ordinal='10' />
+                  <column datatype='real' name='NewCapacity' ordinal='11' />
+                  <column datatype='real' name='AccumulatedNewCapacity' ordinal='12' />
+                  <column datatype='real' name='TotalCapacityAnnual' ordinal='13' />
+                  <column datatype='real' name='RateOfActivity' ordinal='14' />
+                  <column datatype='real' name='RateOfTotalActivity' ordinal='15' />
+                  <column datatype='real' name='TotalTechnologyAnnualActivity' ordinal='16' />
+                  <column datatype='real' name='TotalAnnualTechnologyActivityByMode' ordinal='17' />
+                  <column datatype='string' name='TotalTechnologyModelPeriodActivity' ordinal='18' />
+                  <column datatype='string' name='RateOfProductionByTechnologyByMode' ordinal='19' />
+                  <column datatype='string' name='RateOfProductionByTechnology' ordinal='20' />
+                  <column datatype='real' name='ProductionByTechnology' ordinal='21' />
+                  <column datatype='real' name='ProductionByTechnologyAnnual' ordinal='22' />
+                  <column datatype='string' name='RateOfProduction' ordinal='23' />
+                  <column datatype='string' name='Production' ordinal='24' />
+                  <column datatype='string' name='RateOfUseByTechnologyByMode' ordinal='25' />
+                  <column datatype='string' name='RateOfUseByTechnology' ordinal='26' />
+                  <column datatype='string' name='UseByTechnologyAnnual' ordinal='27' />
+                  <column datatype='string' name='UseByTechnology' ordinal='28' />
+                  <column datatype='string' name='UseAnnual' ordinal='29' />
+                  <column datatype='string' name='CapitalInvestment' ordinal='30' />
+                  <column datatype='string' name='DiscountedCapitalInvestment' ordinal='31' />
+                  <column datatype='string' name='SalvageValue' ordinal='32' />
+                  <column datatype='string' name='DiscountedSalvageValue' ordinal='33' />
+                  <column datatype='string' name='OperatingCost' ordinal='34' />
+                  <column datatype='string' name='DiscountedOperatingCost' ordinal='35' />
+                  <column datatype='string' name='AnnualVariableOperatingCost' ordinal='36' />
+                  <column datatype='string' name='AnnualFixedOperatingCost' ordinal='37' />
+                  <column datatype='string' name='TotalDiscountedCostByTechnology' ordinal='38' />
+                  <column datatype='string' name='TotalDiscountedCost' ordinal='39' />
+                  <column datatype='string' name='TotalCapacityInReserveMargin' ordinal='40' />
+                  <column datatype='string' name='DemandNeedingReserveMargin' ordinal='41' />
+                  <column datatype='string' name='TotalREProductionAnnual' ordinal='42' />
+                  <column datatype='string' name='RETotalProductionOfTargetFuelAnnual' ordinal='43' />
+                  <column datatype='string' name='AnnualTechnologyEmissionByMode' ordinal='44' />
+                  <column datatype='real' name='AnnualTechnologyEmission' ordinal='45' />
+                  <column datatype='string' name='AnnualTechnologyEmissionPenaltyByEmission' ordinal='46' />
+                  <column datatype='string' name='AnnualTechnologyEmissionsPenalty' ordinal='47' />
+                  <column datatype='string' name='DiscountedTechnologyEmissionsPenalty' ordinal='48' />
+                  <column datatype='string' name='AnnualEmissions' ordinal='49' />
+                  <column datatype='string' name='ModelPeriodEmissions' ordinal='50' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Bosque'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_land_BAU_Output' name='federated.17e1xze1qxdrdq14znl100v7nsvu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17e1xze1qxdrdq14znl100v7nsvu'>
+            <column caption='Technology1' datatype='string' name='[Technology]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Cafe&quot;' value='Café' />
+                <alias key='&quot;Cana&quot;' value='Caña de azúcar' />
+                <alias key='&quot;Floricolas&quot;' value='Flores' />
+                <alias key='&quot;Maiz&quot;' value='Maíz' />
+                <alias key='&quot;Otras_tierras&quot;' value='Otras tierras' />
+                <alias key='&quot;Otros_cultivos&quot;' value='Otros cultivos' />
+                <alias key='&quot;Tierra_agropecuaria&quot;' value='Tierra agropecuaria' />
+                <alias key='&quot;Tuberculos&quot;' value='Tubérculos' />
+                <alias key='&quot;Zona_atropica&quot;' value='Zona atrópica' />
+              </aliases>
+            </column>
+            <column caption='Total Technology Annual Activity' datatype='real' name='[TotalTechnologyAnnualActivity]' role='measure' type='quantitative' />
+            <column caption='Year1' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Technology]' derivation='None' name='[none:Technology:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[TotalTechnologyAnnualActivity]' derivation='Sum' name='[sum:TotalTechnologyAnnualActivity:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Bosque_nativo&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Plantacion_forestal&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Plantacion_forestal&quot;</bucket>
+              <bucket>&quot;Bosque_nativo&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Year:ok]' member='2018' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2019' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2020' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2021' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]</column>
+            <column>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[sum:TotalTechnologyAnnualActivity:qk]' scope='rows' value='Área [Mha]' />
+            <encoding attr='space' class='0' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[sum:TotalTechnologyAnnualActivity:qk]' field-type='quantitative' max='13.268109750000001' min='11.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]' value='141' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='14' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17e1xze1qxdrdq14znl100v7nsvu].[sum:TotalTechnologyAnnualActivity:qk]</rows>
+        <cols>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]</cols>
+      </table>
+      <simple-id uuid='{6F73CCF1-5FB1-4D1F-8199-7404B6606FF4}' />
+    </worksheet>
+    <worksheet name='Coberturas'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_land_BAU_Output' name='federated.17e1xze1qxdrdq14znl100v7nsvu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17e1xze1qxdrdq14znl100v7nsvu'>
+            <column caption='Technology1' datatype='string' name='[Technology]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Cafe&quot;' value='Café' />
+                <alias key='&quot;Cana&quot;' value='Caña de azúcar' />
+                <alias key='&quot;Floricolas&quot;' value='Flores' />
+                <alias key='&quot;Maiz&quot;' value='Maíz' />
+                <alias key='&quot;Otras_tierras&quot;' value='Otras tierras' />
+                <alias key='&quot;Otros_cultivos&quot;' value='Otros cultivos' />
+                <alias key='&quot;Tierra_agropecuaria&quot;' value='Tierra agropecuaria' />
+                <alias key='&quot;Tuberculos&quot;' value='Tubérculos' />
+                <alias key='&quot;Zona_atropica&quot;' value='Zona atrópica' />
+              </aliases>
+            </column>
+            <column caption='Total Technology Annual Activity' datatype='real' name='[TotalTechnologyAnnualActivity]' role='measure' type='quantitative' />
+            <column caption='Year1' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Technology]' derivation='None' name='[none:Technology:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[TotalTechnologyAnnualActivity]' derivation='Sum' name='[pcto:sum:TotalTechnologyAnnualActivity:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Bosque&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Humedal&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Otras_tierras&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Pastizales&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Tierra_agropecuaria&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Zona_atropica&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Otras_tierras&quot;</bucket>
+              <bucket>&quot;Zona_atropica&quot;</bucket>
+              <bucket>&quot;Humedal&quot;</bucket>
+              <bucket>&quot;Bosque&quot;</bucket>
+              <bucket>&quot;Pastizales&quot;</bucket>
+              <bucket>&quot;Tierra_agropecuaria&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Year:ok]' member='2018' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2019' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2020' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2021' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2022' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2023' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2024' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2025' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2026' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2027' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2028' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2029' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2030' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2031' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2032' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2033' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2034' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2035' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2036' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2037' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2038' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2039' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2040' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2041' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2042' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2043' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2044' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2045' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2046' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2047' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2048' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2049' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2050' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]</column>
+            <column>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[pcto:sum:TotalTechnologyAnnualActivity:qk]' value='100' />
+            <format attr='title' class='0' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[pcto:sum:TotalTechnologyAnnualActivity:qk]' scope='rows' value='Distribución del area, 2018 [%]' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]' value='201' />
+            <format attr='height' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]' value='125' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]' value='88' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='font-style' value='normal' />
+            <format attr='font-weight' value='normal' />
+            <format attr='text-orientation' value='-90' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]' value='-90' />
+            <format attr='display' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]' value='true' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='14' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='col-width' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]' value='310' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='231' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17e1xze1qxdrdq14znl100v7nsvu].[pcto:sum:TotalTechnologyAnnualActivity:qk]</rows>
+        <cols>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]</cols>
+        <percentages enabled='true' mode='row' />
+      </table>
+      <simple-id uuid='{F4ADF598-0282-4E17-91C6-3001E3BFC16B}' />
+    </worksheet>
+    <worksheet name='Cultivos'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_land_BAU_Output' name='federated.17e1xze1qxdrdq14znl100v7nsvu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17e1xze1qxdrdq14znl100v7nsvu'>
+            <column caption='Technology1' datatype='string' name='[Technology]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Cafe&quot;' value='Café' />
+                <alias key='&quot;Cana&quot;' value='Caña de azúcar' />
+                <alias key='&quot;Floricolas&quot;' value='Flores' />
+                <alias key='&quot;Maiz&quot;' value='Maíz' />
+                <alias key='&quot;Otras_tierras&quot;' value='Otras tierras' />
+                <alias key='&quot;Otros_cultivos&quot;' value='Otros cultivos' />
+                <alias key='&quot;Tierra_agropecuaria&quot;' value='Tierra agropecuaria' />
+                <alias key='&quot;Tuberculos&quot;' value='Tubérculos' />
+                <alias key='&quot;Zona_atropica&quot;' value='Zona atrópica' />
+              </aliases>
+            </column>
+            <column caption='Total Technology Annual Activity' datatype='real' name='[TotalTechnologyAnnualActivity]' role='measure' type='quantitative' />
+            <column caption='Year1' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Technology]' derivation='None' name='[none:Technology:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[TotalTechnologyAnnualActivity]' derivation='Sum' name='[sum:TotalTechnologyAnnualActivity:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Arroz&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Banano&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Cacao&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Cafe&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Cana&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Cereales&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Floricolas&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Fruta&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Legumbres&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Maiz&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Otros_cultivos&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Palma&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Palmito&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Soya&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Tuberculos&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Verduras&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Arroz&quot;</bucket>
+              <bucket>&quot;Banano&quot;</bucket>
+              <bucket>&quot;Cacao&quot;</bucket>
+              <bucket>&quot;Cafe&quot;</bucket>
+              <bucket>&quot;Cana&quot;</bucket>
+              <bucket>&quot;Cereales&quot;</bucket>
+              <bucket>&quot;Floricolas&quot;</bucket>
+              <bucket>&quot;Fruta&quot;</bucket>
+              <bucket>&quot;Legumbres&quot;</bucket>
+              <bucket>&quot;Maiz&quot;</bucket>
+              <bucket>&quot;Palma&quot;</bucket>
+              <bucket>&quot;Palmito&quot;</bucket>
+              <bucket>&quot;Soya&quot;</bucket>
+              <bucket>&quot;Tuberculos&quot;</bucket>
+              <bucket>&quot;Verduras&quot;</bucket>
+              <bucket>&quot;Otros_cultivos&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Year:ok]' member='2018' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2019' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2020' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2021' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]</column>
+            <column>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[sum:TotalTechnologyAnnualActivity:qk]' scope='rows' value='Área [Mha]' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]' value='201' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='14' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='col-width' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]' value='206' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='231' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17e1xze1qxdrdq14znl100v7nsvu].[sum:TotalTechnologyAnnualActivity:qk]</rows>
+        <cols>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]</cols>
+      </table>
+      <simple-id uuid='{7045FA1E-0873-4B9F-A061-3B54A2562C47}' />
+    </worksheet>
+    <worksheet name='Demanda_cultivos'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_land_BAU_Output' name='federated.17e1xze1qxdrdq14znl100v7nsvu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17e1xze1qxdrdq14znl100v7nsvu'>
+            <column datatype='real' name='[Demand]' role='dimension' type='ordinal' />
+            <column caption='Fuel1' datatype='string' name='[Fuel]' role='dimension' type='nominal' />
+            <column caption='Year1' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Fuel]' derivation='None' name='[none:Fuel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Demand]' derivation='Sum' name='[sum:Demand:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Fuel:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Fuel:nk]' member='&quot;Dem_Arroz&quot;' />
+              <groupfilter function='member' level='[none:Fuel:nk]' member='&quot;Dem_Banano&quot;' />
+              <groupfilter function='member' level='[none:Fuel:nk]' member='&quot;Dem_Cacao&quot;' />
+              <groupfilter function='member' level='[none:Fuel:nk]' member='&quot;Dem_Cafe&quot;' />
+              <groupfilter function='member' level='[none:Fuel:nk]' member='&quot;Dem_Cana&quot;' />
+              <groupfilter function='member' level='[none:Fuel:nk]' member='&quot;Dem_Cereales&quot;' />
+              <groupfilter function='member' level='[none:Fuel:nk]' member='&quot;Dem_Floricolas&quot;' />
+              <groupfilter function='member' level='[none:Fuel:nk]' member='&quot;Dem_Fruta&quot;' />
+              <groupfilter function='member' level='[none:Fuel:nk]' member='&quot;Dem_Legumbres&quot;' />
+              <groupfilter function='member' level='[none:Fuel:nk]' member='&quot;Dem_Maiz&quot;' />
+              <groupfilter function='member' level='[none:Fuel:nk]' member='&quot;Dem_Palma&quot;' />
+              <groupfilter function='member' level='[none:Fuel:nk]' member='&quot;Dem_Palmito&quot;' />
+              <groupfilter function='member' level='[none:Fuel:nk]' member='&quot;Dem_Soya&quot;' />
+              <groupfilter function='member' level='[none:Fuel:nk]' member='&quot;Dem_Tuberculos&quot;' />
+              <groupfilter function='member' level='[none:Fuel:nk]' member='&quot;Dem_Verduras&quot;' />
+            </groupfilter>
+          </filter>
+          <alphabetic-sort column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Fuel:nk]' direction='ASC' />
+          <filter class='categorical' column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Year:ok]' member='2020' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2025' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2030' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2035' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2040' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2045' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2050' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]</column>
+            <column>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Fuel:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[sum:Demand:qk]' scope='rows' value='Demanda [Mton]' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]' value='201' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='14' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Fuel:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='231' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17e1xze1qxdrdq14znl100v7nsvu].[sum:Demand:qk]</rows>
+        <cols>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]</cols>
+      </table>
+      <simple-id uuid='{C8781289-4C54-4AEC-AD69-6348CF51A0F3}' />
+    </worksheet>
+    <worksheet name='Demanda_ganaderia'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_land_BAU_Output' name='federated.17e1xze1qxdrdq14znl100v7nsvu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17e1xze1qxdrdq14znl100v7nsvu'>
+            <column datatype='real' name='[Demand]' role='dimension' type='ordinal' />
+            <column caption='Fuel1' datatype='string' name='[Fuel]' role='dimension' type='nominal' />
+            <column caption='Year1' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Fuel]' derivation='None' name='[none:Fuel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Demand]' derivation='Sum' name='[sum:Demand:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Fuel:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Fuel:nk]' member='&quot;Dem_Carne&quot;' />
+              <groupfilter function='member' level='[none:Fuel:nk]' member='&quot;Dem_Leche&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Year:ok]' member='2020' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2025' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2030' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2035' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2040' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2045' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2050' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]</column>
+            <column>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Fuel:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[sum:Demand:qk]' scope='rows' value='Demanda [Mton]' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]' value='201' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='14' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Fuel:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17e1xze1qxdrdq14znl100v7nsvu].[sum:Demand:qk]</rows>
+        <cols>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]</cols>
+      </table>
+      <simple-id uuid='{456644B0-0A72-4A54-A2CA-8AAF9F0525E6}' />
+    </worksheet>
+    <worksheet name='Emisiones_gallinas'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_land_BAU_Output' name='federated.17e1xze1qxdrdq14znl100v7nsvu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17e1xze1qxdrdq14znl100v7nsvu'>
+            <column caption='Annual Technology Emission' datatype='real' name='[AnnualTechnologyEmission]' role='dimension' type='ordinal' />
+            <column caption='Emission1' datatype='string' name='[Emission]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;co2_cultivos&quot;' value='Cultivos de arroz' />
+                <alias key='&quot;co2_ferm&quot;' value='Fermentación entérica, ganado' />
+                <alias key='&quot;co2_gallinas&quot;' value='Gallinas' />
+                <alias key='&quot;co2_manure&quot;' value='Manejo de estiércol, ganado' />
+                <alias key='&quot;co2_remociones&quot;' value='Remociones' />
+              </aliases>
+            </column>
+            <column caption='Technology1' datatype='string' name='[Technology]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Cafe&quot;' value='Café' />
+                <alias key='&quot;Cana&quot;' value='Caña de azúcar' />
+                <alias key='&quot;Floricolas&quot;' value='Flores' />
+                <alias key='&quot;Maiz&quot;' value='Maíz' />
+                <alias key='&quot;Otras_tierras&quot;' value='Otras tierras' />
+                <alias key='&quot;Otros_cultivos&quot;' value='Otros cultivos' />
+                <alias key='&quot;Tierra_agropecuaria&quot;' value='Tierra agropecuaria' />
+                <alias key='&quot;Tuberculos&quot;' value='Tubérculos' />
+                <alias key='&quot;Zona_atropica&quot;' value='Zona atrópica' />
+              </aliases>
+            </column>
+            <column caption='Year1' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Emission]' derivation='None' name='[none:Emission:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Technology]' derivation='None' name='[none:Technology:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[AnnualTechnologyEmission]' derivation='Sum' name='[sum:AnnualTechnologyEmission:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Emission:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Emission:nk]' member='&quot;co2_arroz&quot;' />
+              <groupfilter function='member' level='[none:Emission:nk]' member='&quot;co2_cultivos&quot;' />
+              <groupfilter function='member' level='[none:Emission:nk]' member='&quot;co2_encalado&quot;' />
+              <groupfilter function='member' level='[none:Emission:nk]' member='&quot;co2_estiercol&quot;' />
+              <groupfilter function='member' level='[none:Emission:nk]' member='&quot;co2_ferm&quot;' />
+              <groupfilter function='member' level='[none:Emission:nk]' member='&quot;co2_gallinas&quot;' />
+              <groupfilter function='member' level='[none:Emission:nk]' member='&quot;co2_quemas&quot;' />
+              <groupfilter function='member' level='[none:Emission:nk]' member='&quot;co2_urea&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Year:ok]' member='2018' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2019' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2020' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2021' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2022' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2023' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2024' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2025' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2026' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2027' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2028' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2029' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2030' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2031' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2032' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2033' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2034' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2035' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2036' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2037' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2038' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2039' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2040' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2041' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2042' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2043' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2044' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2045' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2046' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2047' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2048' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2049' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2050' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]' direction='ASC'>
+            <dictionary>
+              <bucket>2018</bucket>
+              <bucket>%null%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Emission:nk]</column>
+            <column>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[sum:AnnualTechnologyEmission:qk]' scope='rows' value='Emisiones [mton CO2 eq]' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]' value='391' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]' value='-90' />
+            <format attr='display' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='14' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='col-width' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Emission:nk]' value='360' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Emission:nk]' />
+              <lod column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17e1xze1qxdrdq14znl100v7nsvu].[sum:AnnualTechnologyEmission:qk]</rows>
+        <cols>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]</cols>
+      </table>
+      <simple-id uuid='{9CF9D8EE-C3D5-46B5-8CAC-7F654AE1BF44}' />
+    </worksheet>
+    <worksheet name='Exportaciones_cultivos'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_land_BAU_Output' name='federated.17e1xze1qxdrdq14znl100v7nsvu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17e1xze1qxdrdq14znl100v7nsvu'>
+            <column caption='Technology1' datatype='string' name='[Technology]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Cafe&quot;' value='Café' />
+                <alias key='&quot;Cana&quot;' value='Caña de azúcar' />
+                <alias key='&quot;Floricolas&quot;' value='Flores' />
+                <alias key='&quot;Maiz&quot;' value='Maíz' />
+                <alias key='&quot;Otras_tierras&quot;' value='Otras tierras' />
+                <alias key='&quot;Otros_cultivos&quot;' value='Otros cultivos' />
+                <alias key='&quot;Tierra_agropecuaria&quot;' value='Tierra agropecuaria' />
+                <alias key='&quot;Tuberculos&quot;' value='Tubérculos' />
+                <alias key='&quot;Zona_atropica&quot;' value='Zona atrópica' />
+              </aliases>
+            </column>
+            <column caption='Total Technology Annual Activity' datatype='real' name='[TotalTechnologyAnnualActivity]' role='measure' type='quantitative' />
+            <column caption='Year1' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Technology]' derivation='None' name='[none:Technology:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[TotalTechnologyAnnualActivity]' derivation='Sum' name='[sum:TotalTechnologyAnnualActivity:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Exp_Arroz&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Exp_Banano&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Exp_Cacao&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Exp_Cafe&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Exp_Cana&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Exp_Cereales&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Exp_Floricolas&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Exp_Fruta&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Exp_Legumbres&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Exp_Maiz&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Exp_Palma&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Exp_Palmito&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Exp_Tuberculos&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Exp_Verduras&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Year:ok]' member='2020' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2025' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2030' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2035' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2040' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2045' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2050' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]</column>
+            <column>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[sum:TotalTechnologyAnnualActivity:qk]' scope='rows' value='Exportaciones [Mton]' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]' value='201' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='14' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='231' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17e1xze1qxdrdq14znl100v7nsvu].[sum:TotalTechnologyAnnualActivity:qk]</rows>
+        <cols>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]</cols>
+      </table>
+      <simple-id uuid='{8B2A2D71-4C46-4622-8690-A47988002B41}' />
+    </worksheet>
+    <worksheet name='Importaciones_cultivos'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_land_BAU_Output' name='federated.17e1xze1qxdrdq14znl100v7nsvu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17e1xze1qxdrdq14znl100v7nsvu'>
+            <column caption='Technology1' datatype='string' name='[Technology]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Cafe&quot;' value='Café' />
+                <alias key='&quot;Cana&quot;' value='Caña de azúcar' />
+                <alias key='&quot;Floricolas&quot;' value='Flores' />
+                <alias key='&quot;Maiz&quot;' value='Maíz' />
+                <alias key='&quot;Otras_tierras&quot;' value='Otras tierras' />
+                <alias key='&quot;Otros_cultivos&quot;' value='Otros cultivos' />
+                <alias key='&quot;Tierra_agropecuaria&quot;' value='Tierra agropecuaria' />
+                <alias key='&quot;Tuberculos&quot;' value='Tubérculos' />
+                <alias key='&quot;Zona_atropica&quot;' value='Zona atrópica' />
+              </aliases>
+            </column>
+            <column caption='Total Technology Annual Activity' datatype='real' name='[TotalTechnologyAnnualActivity]' role='measure' type='quantitative' />
+            <column caption='Year1' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Technology]' derivation='None' name='[none:Technology:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[TotalTechnologyAnnualActivity]' derivation='Sum' name='[sum:TotalTechnologyAnnualActivity:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Imp_Arroz&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Imp_Banano&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Imp_Cacao&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Imp_Cafe&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Imp_Cana&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Imp_Cereales&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Imp_Floricolas&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Imp_Fruta&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Imp_Legumbres&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Imp_Maiz&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Imp_Palma&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Imp_Palmito&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Imp_Soya&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Imp_Tuberculos&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Imp_Verduras&quot;' />
+            </groupfilter>
+          </filter>
+          <alphabetic-sort column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]' direction='ASC' />
+          <filter class='categorical' column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Year:ok]' member='2020' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2025' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2030' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2035' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2040' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2045' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2050' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]</column>
+            <column>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[sum:TotalTechnologyAnnualActivity:qk]' scope='rows' value='Importaciones [Mton]' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]' value='201' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='14' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='231' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17e1xze1qxdrdq14znl100v7nsvu].[sum:TotalTechnologyAnnualActivity:qk]</rows>
+        <cols>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]</cols>
+      </table>
+      <simple-id uuid='{386CE250-5F8E-45AB-A715-66343674D031}' />
+    </worksheet>
+    <worksheet name='Importaciones_ganaderia'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_land_BAU_Output' name='federated.17e1xze1qxdrdq14znl100v7nsvu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17e1xze1qxdrdq14znl100v7nsvu'>
+            <column caption='Technology1' datatype='string' name='[Technology]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Cafe&quot;' value='Café' />
+                <alias key='&quot;Cana&quot;' value='Caña de azúcar' />
+                <alias key='&quot;Floricolas&quot;' value='Flores' />
+                <alias key='&quot;Maiz&quot;' value='Maíz' />
+                <alias key='&quot;Otras_tierras&quot;' value='Otras tierras' />
+                <alias key='&quot;Otros_cultivos&quot;' value='Otros cultivos' />
+                <alias key='&quot;Tierra_agropecuaria&quot;' value='Tierra agropecuaria' />
+                <alias key='&quot;Tuberculos&quot;' value='Tubérculos' />
+                <alias key='&quot;Zona_atropica&quot;' value='Zona atrópica' />
+              </aliases>
+            </column>
+            <column caption='Total Technology Annual Activity' datatype='real' name='[TotalTechnologyAnnualActivity]' role='measure' type='quantitative' />
+            <column caption='Year1' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Technology]' derivation='None' name='[none:Technology:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[TotalTechnologyAnnualActivity]' derivation='Sum' name='[sum:TotalTechnologyAnnualActivity:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Imp_Carne&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Imp_Leche&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Imp_Banano&quot;</bucket>
+              <bucket>&quot;Imp_Arroz&quot;</bucket>
+              <bucket>&quot;Imp_Cacao&quot;</bucket>
+              <bucket>&quot;Imp_Cafe&quot;</bucket>
+              <bucket>&quot;Imp_Cana&quot;</bucket>
+              <bucket>&quot;Imp_Carne&quot;</bucket>
+              <bucket>&quot;Imp_Cereales&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Year:ok]' member='2020' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2025' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2030' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2035' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2040' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2045' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2050' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]</column>
+            <column>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[sum:TotalTechnologyAnnualActivity:qk]' scope='rows' value='Importaciones [Mton]' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]' value='201' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='14' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17e1xze1qxdrdq14znl100v7nsvu].[sum:TotalTechnologyAnnualActivity:qk]</rows>
+        <cols>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]</cols>
+      </table>
+      <simple-id uuid='{40D051E5-D650-41A7-B77B-13DA884E8EFB}' />
+    </worksheet>
+    <worksheet name='Producción_cultivos'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_land_BAU_Output' name='federated.17e1xze1qxdrdq14znl100v7nsvu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17e1xze1qxdrdq14znl100v7nsvu'>
+            <column caption='Production By Technology' datatype='real' name='[ProductionByTechnology]' role='dimension' type='quantitative' />
+            <column caption='Technology1' datatype='string' name='[Technology]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Cafe&quot;' value='Café' />
+                <alias key='&quot;Cana&quot;' value='Caña de azúcar' />
+                <alias key='&quot;Floricolas&quot;' value='Flores' />
+                <alias key='&quot;Maiz&quot;' value='Maíz' />
+                <alias key='&quot;Otras_tierras&quot;' value='Otras tierras' />
+                <alias key='&quot;Otros_cultivos&quot;' value='Otros cultivos' />
+                <alias key='&quot;Tierra_agropecuaria&quot;' value='Tierra agropecuaria' />
+                <alias key='&quot;Tuberculos&quot;' value='Tubérculos' />
+                <alias key='&quot;Zona_atropica&quot;' value='Zona atrópica' />
+              </aliases>
+            </column>
+            <column caption='Year1' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Technology]' derivation='None' name='[none:Technology:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[ProductionByTechnology]' derivation='Sum' name='[sum:ProductionByTechnology:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Arroz&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Banano&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Cacao&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Cafe&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Cana&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Cereales&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Floricolas&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Fruta&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Legumbres&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Maiz&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Palma&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Palmito&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Soya&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Tuberculos&quot;' />
+              <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Verduras&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Year:ok]' member='2020' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2025' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2030' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2035' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2040' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2050' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]</column>
+            <column>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[sum:ProductionByTechnology:qk]' scope='rows' value='Producción nacional [Mton]' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]' value='201' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='14' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='231' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17e1xze1qxdrdq14znl100v7nsvu].[sum:ProductionByTechnology:qk]</rows>
+        <cols>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]</cols>
+      </table>
+      <simple-id uuid='{EF428FBF-E8ED-496D-9870-944E16D46F84}' />
+    </worksheet>
+    <worksheet name='Producción_ganadería'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_land_BAU_Output' name='federated.17e1xze1qxdrdq14znl100v7nsvu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17e1xze1qxdrdq14znl100v7nsvu'>
+            <column caption='Fuel1' datatype='string' name='[Fuel]' role='dimension' type='nominal' />
+            <column caption='Production By Technology' datatype='real' name='[ProductionByTechnology]' role='dimension' type='quantitative' />
+            <column caption='Technology1' datatype='string' name='[Technology]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Cafe&quot;' value='Café' />
+                <alias key='&quot;Cana&quot;' value='Caña de azúcar' />
+                <alias key='&quot;Floricolas&quot;' value='Flores' />
+                <alias key='&quot;Maiz&quot;' value='Maíz' />
+                <alias key='&quot;Otras_tierras&quot;' value='Otras tierras' />
+                <alias key='&quot;Otros_cultivos&quot;' value='Otros cultivos' />
+                <alias key='&quot;Tierra_agropecuaria&quot;' value='Tierra agropecuaria' />
+                <alias key='&quot;Tuberculos&quot;' value='Tubérculos' />
+                <alias key='&quot;Zona_atropica&quot;' value='Zona atrópica' />
+              </aliases>
+            </column>
+            <column caption='Year1' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Fuel]' derivation='None' name='[none:Fuel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Technology]' derivation='None' name='[none:Technology:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[ProductionByTechnology]' derivation='Sum' name='[sum:ProductionByTechnology:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Fuel:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Fuel:nk]' member='&quot;Carne&quot;' />
+              <groupfilter function='member' level='[none:Fuel:nk]' member='&quot;Leche&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]'>
+            <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Ganaderia&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Year:ok]' member='2020' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2025' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2030' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2035' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2045' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2050' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]</column>
+            <column>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]</column>
+            <column>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Fuel:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[sum:ProductionByTechnology:qk]' scope='rows' value='Producción nacional [Mha]' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]' value='201' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='14' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Fuel:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17e1xze1qxdrdq14znl100v7nsvu].[sum:ProductionByTechnology:qk]</rows>
+        <cols>[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Year:ok]</cols>
+      </table>
+      <simple-id uuid='{F60B44B6-B8E9-4465-BC16-4F9159409AA2}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='D_Cultivos'>
+      <style />
+      <size maxheight='1200' maxwidth='1000' minheight='1200' minwidth='1000' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='86500' id='17' param='horz' type-v2='layout-flow' w='98400' x='800' y='667'>
+            <zone h='86500' id='12' type-v2='layout-basic' w='98400' x='800' y='667'>
+              <zone h='38126' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='667'>
+                <zone h='38126' id='5' type-v2='layout-basic' w='98400' x='800' y='667'>
+                  <zone h='38126' id='15' name='Cultivos' show-title='false' w='49200' x='800' y='667'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='38126' id='3' name='Producción_cultivos' show-title='false' w='49200' x='50000' y='667'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='24084' id='9' name='Importaciones_cultivos' show-title='false' w='49200' x='50000' y='63083'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24290' id='32' name='Exportaciones_cultivos' show-title='false' w='49200' x='50000' y='38793'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='48374' id='11' name='Demanda_cultivos' show-title='false' w='49200' x='800' y='38793'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='12166' id='19' type-v2='layout-flow' w='98400' x='800' y='87167'>
+            <zone h='12166' id='18' name='Cultivos' pane-specification-id='1' param='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]' show-title='false' type-v2='color' w='98400' x='800' y='87167'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1550' minheight='1550' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='36' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='35' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='38126' id='15' is-fixed='true' name='Cultivos' show-title='false' w='49200' x='800' y='667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12166' id='18' name='Cultivos' pane-specification-id='1' param='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]' show-title='false' type-v2='color' w='98400' x='800' y='87167'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38126' id='3' is-fixed='true' name='Producción_cultivos' show-title='false' w='49200' x='50000' y='667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48374' id='11' is-fixed='true' name='Demanda_cultivos' show-title='false' w='49200' x='800' y='38793'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='24290' id='32' is-fixed='true' name='Exportaciones_cultivos' show-title='false' w='49200' x='50000' y='38793'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='24084' id='9' is-fixed='true' name='Importaciones_cultivos' show-title='false' w='49200' x='50000' y='63083'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{EB8F3221-76D6-46CB-A206-85D9A59AE721}' />
+    </dashboard>
+    <dashboard name='D_Emisiones'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='21' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='82125' id='3' name='Emisiones_gallinas' show-title='false' w='98400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='15875' id='8' name='Emisiones_gallinas' pane-specification-id='1' param='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Emission:nk]' show-title='false' type-v2='color' w='98400' x='800' y='83125'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='36' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='35' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='82125' id='3' is-fixed='true' name='Emisiones_gallinas' show-title='false' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='15875' id='8' name='Emisiones_gallinas' pane-specification-id='1' param='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Emission:nk]' show-title='false' type-v2='color' w='98400' x='800' y='83125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{AE8B11D4-55BB-4613-BE59-7E9869562317}' />
+    </dashboard>
+    <dashboard name='D_Ganadería'>
+      <style />
+      <size maxheight='600' maxwidth='1300' minheight='600' minwidth='1300' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='86167' id='14' param='horz' type-v2='layout-flow' w='98770' x='615' y='1333'>
+            <zone h='86167' id='5' type-v2='layout-basic' w='98770' x='615' y='1333'>
+              <zone h='86167' id='3' name='Producción_ganadería' show-title='false' w='32693' x='615' y='1333'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='86167' id='9' name='Importaciones_ganaderia' show-title='false' w='34230' x='33308' y='1333'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='86167' id='10' name='Demanda_ganaderia' show-title='false' w='31847' x='67538' y='1333'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='5667' id='16' type-v2='layout-flow' w='98770' x='615' y='87500'>
+            <zone h='5667' id='15' name='Producción_ganadería' pane-specification-id='1' param='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Fuel:nk]' show-title='false' type-v2='color' w='98770' x='615' y='87500'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='5500' id='17' type-v2='text' w='98770' x='615' y='93167'>
+            <formatted-text>
+              <run fontcolor='#000000' fontsize='14'>Nota: las exportaciones de carne y leche son cercanas a cero. </run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='33' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97334' id='32' param='vert' type-v2='layout-flow' w='98770' x='615' y='1333'>
+                <zone fixed-size='280' h='86167' id='3' is-fixed='true' name='Producción_ganadería' show-title='false' w='32693' x='615' y='1333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5667' id='15' name='Producción_ganadería' pane-specification-id='1' param='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Fuel:nk]' show-title='false' type-v2='color' w='98770' x='615' y='87500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='86167' id='9' is-fixed='true' name='Importaciones_ganaderia' show-title='false' w='34230' x='33308' y='1333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='86167' id='10' is-fixed='true' name='Demanda_ganaderia' show-title='false' w='31847' x='67538' y='1333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5500' id='17' type-v2='text' w='98770' x='615' y='93167'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontsize='14'>Nota: las exportaciones de carne y leche son cercanas a cero. </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E184DF9A-00D2-4C8C-BD99-9541DECBAB95}' />
+    </dashboard>
+    <dashboard name='D_coberturas'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='86000' id='3' name='Coberturas' show-title='false' w='98400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='12000' id='8' name='Coberturas' pane-specification-id='1' param='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]' show-title='false' type-v2='color' w='98400' x='800' y='87000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='24' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='96000' id='23' param='vert' type-v2='layout-flow' w='98400' x='800' y='2000'>
+                <zone fixed-size='280' h='73000' id='3' is-fixed='true' name='Coberturas' show-title='false' w='98400' x='800' y='2000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='23000' id='8' name='Coberturas' pane-specification-id='1' param='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]' show-title='false' type-v2='color' w='98400' x='800' y='75000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E284DFFF-14E3-4089-A918-D8F8DE9DDDC8}' />
+    </dashboard>
+    <dashboard name='D_coberturas (2)'>
+      <style />
+      <size maxheight='400' maxwidth='1000' minheight='400' minwidth='1000' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='96000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='2000'>
+            <zone h='96000' id='5' type-v2='layout-basic' w='98400' x='800' y='2000'>
+              <zone h='73000' id='3' name='Coberturas' show-title='false' w='98400' x='800' y='2000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='23000' id='8' name='Coberturas' pane-specification-id='1' param='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]' show-title='false' type-v2='color' w='98400' x='800' y='75000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='24' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='23' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='73000' id='3' is-fixed='true' name='Coberturas' show-title='false' w='98400' x='800' y='2000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='23000' id='8' name='Coberturas' pane-specification-id='1' param='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]' show-title='false' type-v2='color' w='98400' x='800' y='75000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{03D6B7AE-AF19-4251-9F2F-8A318B6D5955}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='dashboard' name='D_coberturas'>
+      <viewpoints>
+        <viewpoint name='Coberturas'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{2EA7A8BF-036B-4381-9F72-A3E559469434}' />
+    </window>
+    <window class='dashboard' name='D_coberturas (2)'>
+      <viewpoints>
+        <viewpoint name='Coberturas'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{EC3503F8-8278-4D69-8284-D6677384C4BE}' />
+    </window>
+    <window class='dashboard' name='D_Cultivos'>
+      <viewpoints>
+        <viewpoint name='Cultivos'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Demanda_cultivos'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Exportaciones_cultivos'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Importaciones_cultivos'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Producción_cultivos'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{7D1BDA06-9DE7-45C0-A4A5-DB40E4E445C3}' />
+    </window>
+    <window class='dashboard' name='D_Ganadería'>
+      <viewpoints>
+        <viewpoint name='Demanda_ganaderia'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Importaciones_ganaderia'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Producción_ganadería'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{D0CA8C55-DEBF-41FD-8E4E-6FA5815D2B96}' />
+    </window>
+    <window class='dashboard' name='D_Emisiones'>
+      <viewpoints>
+        <viewpoint name='Emisiones_gallinas'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{12F2D549-DF26-41DC-8074-C8950F17EA6B}' />
+    </window>
+    <window class='worksheet' name='Coberturas'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='228'>
+            <card pane-specification-id='1' param='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{79043CDC-142A-40D2-94DF-6E3F56846A36}' />
+    </window>
+    <window class='worksheet' name='Bosque'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='228'>
+            <card pane-specification-id='1' param='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F675E7FF-D6A8-49EC-8FFD-1CB4F7887902}' />
+    </window>
+    <window class='worksheet' name='Cultivos'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='228'>
+            <card pane-specification-id='1' param='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BD665B21-2C8F-4FC0-B7A0-CE93081DB2E4}' />
+    </window>
+    <window class='worksheet' name='Producción_cultivos'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{C5F0DFCB-82A5-44FF-ADD8-230647FF91FE}' />
+    </window>
+    <window class='worksheet' name='Importaciones_cultivos'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='228'>
+            <card pane-specification-id='1' param='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{18B4CABD-40D1-40A1-A8A3-0229C65DBBA8}' />
+    </window>
+    <window class='worksheet' name='Demanda_cultivos'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Fuel:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{E0A0C778-6E39-4775-B96B-7C3923E235C6}' />
+    </window>
+    <window class='worksheet' name='Exportaciones_cultivos'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='228'>
+            <card pane-specification-id='1' param='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{6413EF53-243A-4C3F-B803-4EA363A5D43B}' />
+    </window>
+    <window class='worksheet' name='Producción_ganadería'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Fuel:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{D38A83D6-C833-435D-A287-D5E88FE5256B}' />
+    </window>
+    <window class='worksheet' name='Importaciones_ganaderia'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='228'>
+            <card pane-specification-id='1' param='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Technology:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{7A4AF314-C957-424C-93F6-CF0EDFC1B2F2}' />
+    </window>
+    <window class='worksheet' name='Demanda_ganaderia'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Fuel:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{78294FE5-401F-47D1-8359-D4B4C0E85DD9}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Emisiones_gallinas'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.17e1xze1qxdrdq14znl100v7nsvu].[none:Emission:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{8505599B-FADA-40A5-A959-BE46B2C130A5}' />
+    </window>
+  </windows>
+</workbook>
