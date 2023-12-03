@@ -1,0 +1,10 @@
+PARAMETER,Scenario,REGION,TECHNOLOGY,FUEL,EMISSION,MODE_OF_OPERATION,YEAR,TIMESLICE,SEASON,DAYTYPE,DAILYTIMEBRACKET,STORAGE,Value
+OperationalLife,BAU,ECU,ENE_TERM,,,,,,,,,,100
+OperationalLife,BAU,ECU,RAW_MAT_CLK,,,,,,,,,,100
+OperationalLife,BAU,ECU,ELEC_TERM,,,,,,,,,,100
+OperationalLife,BAU,ECU,ELEC_CEM,,,,,,,,,,100
+OperationalLife,BAU,ECU,RAW_MAT_CEM,,,,,,,,,,100
+OperationalLife,BAU,ECU,PROD_CLK_TRAD,,,,,,,,,,40
+OperationalLife,BAU,ECU,PROD_CLK_ELEC,,,,,,,,,,30
+OperationalLife,BAU,ECU,PROD_CEM,,,,,,,,,,100
+OperationalLife,BAU,ECU,T5CEM_PRODCEM_PROD,,,,,,,,,,100
