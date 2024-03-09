@@ -353,10 +353,104 @@ for m in range(len(list_demand_or_share)):
             Demand_df.loc[m, Projections_sheet['Year'].tolist()[y]] = round(demand_trajectory[-1]*(this_value_BY/(this_value_BY + other_value_BY)), 4)
         #
     #
+    '''
+    The next four projetion mode have variation percentages (and do not need
+    to be divided by 100). In this project, the same applies to the projection
+    mode above.
+    '''
+    # Use additional "extra" variables for the updated projections:
+    var_km_pas_list = Projections_sheet['Variation_km_Passenger'].tolist()
+    var_km_fre_list = Projections_sheet['Variation_km_Freight'].tolist()
+    var_pop_list = Projections_sheet['Variation_Population'].tolist()
+    var_gdp_pc_list = Projections_sheet['Variation_GDP_per_cap'].tolist()
+    var_gdp_tra_list = Projections_sheet['Variation_GDP_transport'].tolist()
+
+    var_ini_pass_list = Projections_sheet['Initial variation passenger'].tolist()
+    var_ini_fre_list = Projections_sheet['Initial variation freight'].tolist()
+    #
+    # This is for passenger transport:
+    if 'Population coupling' in list_projection_mode[m]:
+        this_tech = list_fuel_or_tech[m]
+        this_net_value_BY = Demand_df.loc[m, 2018]
+        demand_trajectory = [this_net_value_BY]
+        for y in range(len(Projections_sheet['Year'].tolist())):
+            this_yr = Projections_sheet['Year'].tolist()[y]
+            if this_yr <= 2022:  # population affects passenger
+                apply_var = var_ini_pass_list[y]
+            else:  # grow with population:
+                apply_var = var_pop_list[y]            
+            demand_trajectory.append(demand_trajectory[-1]*(1 + apply_var))
+            Demand_df.loc[m, this_yr] = round(demand_trajectory[-1], 4)
+        #
+    #
+    # This is for freight transport:
+    if 'GDP transport coupling' in list_projection_mode[m]:
+        this_tech = list_fuel_or_tech[m]
+        this_net_value_BY = Demand_df.loc[m, 2018]
+        demand_trajectory = [this_net_value_BY]
+        for y in range(len(Projections_sheet['Year'].tolist())):
+            this_yr = Projections_sheet['Year'].tolist()[y]
+            if this_yr <= 2022:  # gdp transport affects affects freight
+                apply_var = var_ini_fre_list[y]
+            else:  # grow with population:
+                apply_var = var_gdp_tra_list[y]            
+            demand_trajectory.append(demand_trajectory[-1]*(1 + apply_var))
+            Demand_df.loc[m, this_yr] = round(demand_trajectory[-1], 4)
+        #
+    #
+    # This is for maritime transport:
+    if 'GDP total coupling after last' in list_projection_mode[m]:
+        this_tech = list_fuel_or_tech[m]
+        this_net_value_BY = Demand_df.loc[m, 2018]
+        demand_trajectory = [this_net_value_BY]
+
+        for y in range(len(Projections_sheet['Year'].tolist())):
+            this_yr = Projections_sheet['Year'].tolist()[y]
+            this_value_add_check = Demand_df.loc[m, this_yr]
+            # differentiating factor
+            apply_var = Projections_sheet['Variation_GDP'].tolist()[y]
+            if math.isnan(this_value_add_check):
+                this_value_add = demand_trajectory[-1]*(1 + apply_var)
+            else:
+                this_value_add = Demand_df.loc[m, this_yr]
+            demand_trajectory.append(this_value_add)
+            Demand_df.loc[m, this_yr] = round(demand_trajectory[-1], 4)
+        #
+    #
+    # This is for air transport:
+    if 'GDP per capita coupling after last' in list_projection_mode[m]:
+        this_tech = list_fuel_or_tech[m]
+        this_net_value_BY = Demand_df.loc[m, 2018]
+        demand_trajectory = [this_net_value_BY]
+
+        for y in range(len(Projections_sheet['Year'].tolist())):
+            this_yr = Projections_sheet['Year'].tolist()[y]
+            this_value_add_check = Demand_df.loc[m, this_yr]
+            # differentiating factor
+            apply_var = var_gdp_pc_list[y]
+            if math.isnan(this_value_add_check):
+                this_value_add = demand_trajectory[-1]*(1 + apply_var)
+            else:
+                this_value_add = Demand_df.loc[m, this_yr]
+            demand_trajectory.append(this_value_add)
+            Demand_df.loc[m, this_yr] = round(demand_trajectory[-1], 4)
+        #
+    #
     if 'Flat' == list_projection_mode[m]:
         this_value_BY = Demand_df.loc[m, 2018]
         for y in range(len(Projections_sheet['Year'].tolist())):
             Demand_df.loc[m, Projections_sheet['Year'].tolist()[y]] = round(this_value_BY, 4)
+    #
+    if 'Flat after last' == list_projection_mode[m]:
+        year_query_valid = []
+        for y in range(len(Projections_sheet['Year'].tolist())):
+            year_query = Projections_sheet['Year'].tolist()[y]
+            this_value_add = Demand_df.loc[m, year_query]
+            if math.isnan(this_value_add):
+                this_value_add = Demand_df.loc[m, year_query_valid[-1]]
+            else:
+                year_query_valid.append(deepcopy(year_query))
+            Demand_df.loc[m, Projections_sheet['Year'].tolist()[y]] = round(this_value_add, 4)
     #
     # Appending to df_SpecAnnualDemand and df_SpecDemandProfile
     if Demand_df['Demand/Share'].tolist()[m] == 'Demand':
