@@ -147,6 +147,8 @@ for g in range(len(groups_list)):
             All_Fuel_list_names.append(these_fuels_names[f])
     #
     #------------------------------------------------------#
+    tech_plus_fuel_unique_oar, tech_plus_fuel_unique_iar = [], []
+
     # Let us continue with a useful dictionary gathering all the data:
     for t in range(len(this_df_techs)):
         this_tech = this_df_techs[t]
@@ -205,24 +207,24 @@ for g in range(len(groups_list)):
                 this_proj_df_new.loc[mask , time_range_vector[y]] = round(this_df_select_by_fo, 4)
             #
             # Filling the data :
-            this_mask_index = this_proj_df_new.loc[mask , time_range_vector[y]].index.tolist()[0]
+            if this_tech + '+' + output_fuel not in tech_plus_fuel_unique_oar:
+                this_mask_index = this_proj_df_new.loc[mask , time_range_vector[y]].index.tolist()[0]
+
+                # Handling OutputActivityRatio
+                this_value_o = deepcopy(
+                    this_proj_df_new.loc[mask, time_range_vector[y]][this_mask_index])
+                oar_row = {
+                    'PARAMETER': 'OutputActivityRatio',
+                    'Scenario': other_setup_params['Main_Scenario'],
+                    'REGION': other_setup_params['Region'],
+                    'TECHNOLOGY': this_tech,
+                    'FUEL': output_fuel,
+                    'MODE_OF_OPERATION': other_setup_params['Mode_of_Operation'],
+                    'YEAR': time_range_vector[y],
+                    'Value': deepcopy(this_value_o)  # Placeholder for the computed value for OutputActivityRatio
+                }
+                accumulated_rows_OAR.append(oar_row)
             
-            # Handling OutputActivityRatio
-            this_value_o = deepcopy(
-                this_proj_df_new.loc[mask, time_range_vector[y]][this_mask_index])
-            oar_row = {
-                'PARAMETER': 'OutputActivityRatio',
-                'Scenario': other_setup_params['Main_Scenario'],
-                'REGION': other_setup_params['Region'],
-                'TECHNOLOGY': this_tech,
-                'FUEL': output_fuel,
-                'MODE_OF_OPERATION': other_setup_params['Mode_of_Operation'],
-                'YEAR': time_range_vector[y],
-                'Value': deepcopy(this_value_o)  # Placeholder for the computed value for OutputActivityRatio
-            }
-            accumulated_rows_OAR.append(oar_row)
-            
-            #
             if groups_list[g] != 'Primary':
                 input_fuel_list = [input_fuel]
                 if input_fuel_2 != 'none':
@@ -249,32 +251,35 @@ for g in range(len(groups_list)):
                     #
                     ###################################################################################################
                     # Filling the data :
-                    this_mask_index = this_proj_df_new.loc[mask , time_range_vector[y]].index.tolist()[0]
+                    if this_tech + '+' + this_input_fuel not in tech_plus_fuel_unique_iar:
+                        this_mask_index = this_proj_df_new.loc[mask , time_range_vector[y]].index.tolist()[0]
 
-                    # Here, instead of updating df_IAR_dict and appending directly to df_IAR:
-                    this_value = deepcopy(this_proj_df_new.loc[mask, time_range_vector[y]][this_mask_index])
+                        # Here, instead of updating df_IAR_dict and appending directly to df_IAR:
+                        this_value = deepcopy(this_proj_df_new.loc[mask, time_range_vector[y]][this_mask_index])
 
-                    # Create a new dictionary for each row to append
-                    iar_row = {
-                        'PARAMETER': this_param, 
-                        'Scenario': other_setup_params['Main_Scenario'],
-                        'REGION': other_setup_params['Region'], 
-                        'TECHNOLOGY': this_tech, 
-                        'FUEL': this_input_fuel,
-                        'MODE_OF_OPERATION': other_setup_params['Mode_of_Operation'], 
-                        'YEAR': time_range_vector[y], 
-                        'Value': this_value
-                    }
-                    # Append the new dictionary to the list for bulk append later
-                    accumulated_rows_IAR.append(iar_row)
-                    #
-                #
-            #
-        #
-    #
+                        # Create a new dictionary for each row to append
+                        iar_row = {
+                            'PARAMETER': this_param, 
+                            'Scenario': other_setup_params['Main_Scenario'],
+                            'REGION': other_setup_params['Region'], 
+                            'TECHNOLOGY': this_tech, 
+                            'FUEL': this_input_fuel,
+                            'MODE_OF_OPERATION': other_setup_params['Mode_of_Operation'], 
+                            'YEAR': time_range_vector[y], 
+                            'Value': this_value
+                        }
+                        # Append the new dictionary to the list for bulk append later
+                        accumulated_rows_IAR.append(iar_row)
+                        #
+                    # Create a tech + fuel string to show uniqueness in iar values:
+                    if (this_tech + '+' + this_input_fuel not in tech_plus_fuel_unique_iar) and y == len(time_range_vector)-1:
+                        tech_plus_fuel_unique_iar.append(this_tech + '+' + this_input_fuel)
+
+        # Create a tech + fuel string to show uniqueness in oar values:
+        if this_tech + '+' + output_fuel not in tech_plus_fuel_unique_oar:
+            tech_plus_fuel_unique_oar.append(this_tech + '+' + output_fuel)
+
     AR_Base_proj_df_new.update({ groups_list[g]:this_proj_df_new })
-    #
-#
 
 # After the loops, convert accumulated data into DataFrames and concatenate them with the original ones
 df_OAR = pd.concat([df_OAR, pd.DataFrame(accumulated_rows_OAR)], ignore_index=True) if accumulated_rows_OAR else df_OAR
