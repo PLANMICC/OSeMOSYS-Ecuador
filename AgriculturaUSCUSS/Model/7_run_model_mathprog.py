@@ -7,7 +7,7 @@ import linecache
 from copy import deepcopy
 import gc
 
-sce = 'BAU'
+sce = 'DDP50'
 
 def set_txt_list( model_to_run ):
     #

@@ -4,7 +4,7 @@ import pandas as pd
 import xlrd
 from copy import deepcopy
 
-sce = 'BAU'
+sce = 'DDP50'
 
 file_name = './2_Model/'+sce+'/ModeloSuelo_'+ sce +'.xlsx'
 
@@ -76,7 +76,7 @@ for i in range(len(sheets_list)):
 										'DAILYTIMEBRACKET':[dailybracket[j]], 
 										'STORAGE':[storage[j]], 
 										'Value':[year[j]]})
-                df_param = df_param.append(line_df, ignore_index=True)
+                df_param = df_param._append(line_df, ignore_index=True)
                 
     else:
         for j in range(len(parameter)):
@@ -94,7 +94,7 @@ for i in range(len(sheets_list)):
 									'DAILYTIMEBRACKET':[dailybracket[j]], 
 									'STORAGE':[storage[j]], 
 									'Value':[value[j]]})
-            df_param = df_param.append(line_df, ignore_index=True)
+            df_param = df_param._append(line_df, ignore_index=True)
             
     csv_name = sheet
     if csv_name == 'TotalTechnologyAnnualActivityLo':
@@ -520,6 +520,12 @@ for p in range( len(list_param_BAU) ):
                     index_value = 53*k + p
                     g.write(str(value[index_value]) + ' ')
                 g.write(' \n')            
+                
+                
+                
+                
+                
+    
                                 
         g.write( ';\n\n' )                             
 #%%%

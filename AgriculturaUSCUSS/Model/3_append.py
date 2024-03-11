@@ -11,9 +11,9 @@ df2 = pd.read_csv(data_output2)
 df3 = pd.read_csv(data_output3)
 df4 = pd.read_csv(data_output4)
 
-dff2 = df1.append(df2)
-dff3 = dff2.append(df3)
-dff4 = dff3.append(df4)
+dff2 = df1._append(df2)
+dff3 = dff2._append(df3)
+dff4 = dff3._append(df4)
 
     
 dff4['Capex2023'] = dff4['CapitalInvestment']
