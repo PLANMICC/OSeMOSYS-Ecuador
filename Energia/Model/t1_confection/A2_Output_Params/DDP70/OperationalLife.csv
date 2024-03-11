@@ -131,6 +131,7 @@ OperationalLife,DDP,ECU,PP_DSLICE,,,,,,,,,,15.0
 OperationalLife,DDP,ECU,PP_DSLTGS,,,,,,,,,,21.0
 OperationalLife,DDP,ECU,PP_NGSTGS,,,,,,,,,,30.0
 OperationalLife,DDP,ECU,PP_CRU,,,,,,,,,,40.0
+OperationalLife,DDP,ECU,PP_TPP,,,,,,,,,,1.0
 OperationalLife,DDP,ECU,PP_WASICE,,,,,,,,,,20.0
 OperationalLife,DDP,ECU,PPIDSLGALICE,,,,,,,,,,15.0
 OperationalLife,DDP,ECU,PPIDSLELRICE,,,,,,,,,,15.0

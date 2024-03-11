@@ -131,6 +131,7 @@ CapacityToActivityUnit,DDP,ECU,PP_DSLICE,,,,,,,,,,31.536
 CapacityToActivityUnit,DDP,ECU,PP_DSLTGS,,,,,,,,,,31.536
 CapacityToActivityUnit,DDP,ECU,PP_NGSTGS,,,,,,,,,,31.536
 CapacityToActivityUnit,DDP,ECU,PP_CRU,,,,,,,,,,31.536
+CapacityToActivityUnit,DDP,ECU,PP_TPP,,,,,,,,,,1.0
 CapacityToActivityUnit,DDP,ECU,PP_WASICE,,,,,,,,,,31.536
 CapacityToActivityUnit,DDP,ECU,PPIDSLGALICE,,,,,,,,,,31.536
 CapacityToActivityUnit,DDP,ECU,PPIDSLELRICE,,,,,,,,,,31.536

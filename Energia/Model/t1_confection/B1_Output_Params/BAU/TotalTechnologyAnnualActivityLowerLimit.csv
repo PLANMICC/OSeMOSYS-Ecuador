@@ -4453,7 +4453,7 @@ TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNTAXGSL,,,,2069,,,,,,8.9896009
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNTAXGSL,,,,2070,,,,,,9.000299880000002
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNMOTGSL,,,,2018,,,,,,3.61113885
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNMOTGSL,,,,2019,,,,,,3.60483948
-TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNMOTGSL,,,,2020,,,,,,3.3240675599999996
+TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNMOTGSL,,,,2020,,,,,,3.39256071
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNMOTGSL,,,,2021,,,,,,3.58294167
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNMOTGSL,,,,2022,,,,,,3.6308368800000004
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNMOTGSL,,,,2023,,,,,,3.6786320999999997
@@ -4665,9 +4665,9 @@ TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSEDGSL,,,,2069,,,,,,14.235376
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSEDGSL,,,,2070,,,,,,14.25217464
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVDSL,,,,2018,,,,,,0.13508649
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVDSL,,,,2019,,,,,,0.13508648999999998
-TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVDSL,,,,2020,,,,,,0.12368763
-TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVDSL,,,,2021,,,,,,0.12668733000000001
-TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVDSL,,,,2022,,,,,,0.119988
+TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVDSL,,,,2020,,,,,,0.1339866
+TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVDSL,,,,2021,,,,,,0.12738726000000003
+TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVDSL,,,,2022,,,,,,0.12068793000000001
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVDSL,,,,2023,,,,,,0.12138786
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVDSL,,,,2024,,,,,,0.12288771
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVDSL,,,,2025,,,,,,0.12448755000000002
@@ -4718,7 +4718,7 @@ TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVDSL,,,,2069,,,,,,0.1663833
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVDSL,,,,2070,,,,,,0.16658334
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVHYBGSL,,,,2018,,,,,,0.03909609
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVHYBGSL,,,,2019,,,,,,0.03569643
-TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVHYBGSL,,,,2020,,,,,,0.03289671
+TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVHYBGSL,,,,2020,,,,,,0.035296469999999996
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVHYBGSL,,,,2021,,,,,,0.03549645
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVHYBGSL,,,,2022,,,,,,0.035896410000000004
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVHYBGSL,,,,2023,,,,,,0.03639636
@@ -4771,7 +4771,7 @@ TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVHYBGSL,,,,2069,,,,,,0.0498
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVHYBGSL,,,,2070,,,,,,0.049995
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVGSL,,,,2018,,,,,,5.7654234
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVGSL,,,,2019,,,,,,5.76732321
-TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVGSL,,,,2020,,,,,,5.318168129999999
+TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVGSL,,,,2020,,,,,,5.68733121
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVGSL,,,,2021,,,,,,5.732326710000001
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVGSL,,,,2022,,,,,,5.809019039999999
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVGSL,,,,2023,,,,,,5.88551139
@@ -4824,7 +4824,7 @@ TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVGSL,,,,2069,,,,,,8.0709928
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNSUVGSL,,,,2070,,,,,,8.08059186
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNCAMDSL,,,,2018,,,,,,0.76302369
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNCAMDSL,,,,2019,,,,,,0.7633236599999998
-TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNCAMDSL,,,,2020,,,,,,0.70382961
+TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNCAMDSL,,,,2020,,,,,,0.72702729
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNCAMDSL,,,,2021,,,,,,0.7586241300000002
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNCAMDSL,,,,2022,,,,,,0.76882311
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNCAMDSL,,,,2023,,,,,,0.7789221000000001
@@ -4877,7 +4877,7 @@ TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNCAMDSL,,,,2069,,,,,,1.0681931
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNCAMDSL,,,,2070,,,,,,1.06939305
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNCAMGSL,,,,2018,,,,,,2.45025495
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNCAMGSL,,,,2019,,,,,,2.3852614500000002
-TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNCAMGSL,,,,2020,,,,,,2.19958002
+TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNCAMGSL,,,,2020,,,,,,2.26707327
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNCAMGSL,,,,2021,,,,,,2.3707629000000003
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNCAMGSL,,,,2022,,,,,,2.40255972
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNCAMGSL,,,,2023,,,,,,2.43415656
@@ -4930,7 +4930,7 @@ TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNCAMGSL,,,,2069,,,,,,3.3379661
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNCAMGSL,,,,2070,,,,,,3.34196577
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFREHEADSL,,,,2018,,,,,,4.91290866
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFREHEADSL,,,,2019,,,,,,4.903109639999999
-TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFREHEADSL,,,,2020,,,,,,4.183181640000001
+TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFREHEADSL,,,,2020,,,,,,4.59414054
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFREHEADSL,,,,2021,,,,,,4.797420209999999
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFREHEADSL,,,,2022,,,,,,4.797420209999999
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFREHEADSL,,,,2023,,,,,,5.1638835599999995
@@ -4983,7 +4983,7 @@ TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFREHEADSL,,,,2069,,,,,,13.657
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFREHEADSL,,,,2070,,,,,,13.91680818
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFREMEDDSL,,,,2018,,,,,,4.91190876
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFREMEDDSL,,,,2019,,,,,,4.902109739999999
-TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFREMEDDSL,,,,2020,,,,,,4.1823817199999995
+TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFREMEDDSL,,,,2020,,,,,,4.58794116
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFREMEDDSL,,,,2021,,,,,,4.79642031
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFREMEDDSL,,,,2022,,,,,,4.79642031
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFREMEDDSL,,,,2023,,,,,,5.16278367
@@ -5036,7 +5036,7 @@ TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFREMEDDSL,,,,2069,,,,,,13.654
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFREMEDDSL,,,,2070,,,,,,13.91390847
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFRELIGDSL,,,,2018,,,,,,3.4750524599999997
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFRELIGDSL,,,,2019,,,,,,3.47505246
-TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFRELIGDSL,,,,2020,,,,,,2.96480349
+TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFRELIGDSL,,,,2020,,,,,,3.33426654
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFRELIGDSL,,,,2021,,,,,,3.4001599500000004
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFRELIGDSL,,,,2022,,,,,,3.4001599500000004
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFRELIGDSL,,,,2023,,,,,,3.65983398
@@ -5089,7 +5089,7 @@ TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFRELIGDSL,,,,2069,,,,,,9.6796
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFRELIGDSL,,,,2070,,,,,,9.86341356
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFRELIGGSL,,,,2018,,,,,,6.8773121999999995
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFRELIGGSL,,,,2019,,,,,,6.643435589999999
-TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFRELIGGSL,,,,2020,,,,,,5.66813313
+TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFRELIGGSL,,,,2020,,,,,,6.32246769
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFRELIGGSL,,,,2021,,,,,,6.50024991
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFRELIGGSL,,,,2022,,,,,,6.50024991
 TotalTechnologyAnnualActivityLowerLimit,BAU,ECU,TRNFRELIGGSL,,,,2023,,,,,,6.996700259999999
