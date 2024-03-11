@@ -125,7 +125,7 @@ df_PIUP_output=df_PIUP_output.assign(Sector='PIUP')
 ###########################################################################################################
 ### Waste
 ###########################################################################################################
-df_Waste_output = pd.read_csv("3_OutputWaste/"+lista_archivos_Waste[0], index_col=None, header=0)
+df_Waste_output = pd.read_csv("3_OutputWaste/"+lista_archivos_Waste[0], index_col=None, header=0, low_memory=False)
 lista4=list(df_Waste_output.columns)
 #print(lista4)
 # for i in range(len(lista1)):
@@ -157,9 +157,9 @@ df_Waste_output=df_Waste_output[IndiceOrdeneTabla(lista1, 'Sector', 2)]
 
 ###########################################################################################################
 'Se reunen los 4 Dataframes'
-df_output = df_Energy_output.append(df_AFOLU_output)
-df_output = df_output.append(df_PIUP_output)
-df_output = df_output.append(df_Waste_output)
+df_output = df_Energy_output._append(df_AFOLU_output)
+df_output = df_output._append(df_PIUP_output)
+df_output = df_output._append(df_Waste_output)
 ### Usamos diferentes nombres para escenarios entonces con esta linea siguiente los ponemos todos iguales
 df_output['Strategy'] = df_output['Strategy'].replace(['DDP50'], 'DDP')
 
