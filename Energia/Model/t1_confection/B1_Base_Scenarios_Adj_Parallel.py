@@ -2425,13 +2425,14 @@ if __name__ == '__main__':
             nonmotorized_values = deepcopy(stable_scenarios[scenario_list[s]]['SpecifiedAnnualDemand']['value'][nonmotorized_range_indices[0]:nonmotorized_range_indices[-1]+1])
             #
             ref_fre_hea = deepcopy(stable_scenarios[scenario_list[s]]['SpecifiedAnnualDemand']['value'][hfre_range_indices[0]:hfre_range_indices[-1]+1])
+            ref_fre_mfre = deepcopy(stable_scenarios[scenario_list[s]]['SpecifiedAnnualDemand']['value'][mfre_range_indices[0]:mfre_range_indices[-1]+1])
             ref_fre_lig = deepcopy(stable_scenarios[scenario_list[s]]['SpecifiedAnnualDemand']['value'][lfre_range_indices[0]:lfre_range_indices[-1]+1])
             #
             Total_Demand = []
             Total_Demand_Fre = []
             for n in range(len(time_range_vector)):
                 Total_Demand.append(float(passpub_values[n]) + float(passpriv_values[n]) + float (nonmotorized_values[n]))
-                Total_Demand_Fre.append(float(ref_fre_hea[n]) + float(ref_fre_lig[n]))
+                Total_Demand_Fre.append(float(ref_fre_hea[n]) + float(ref_fre_mfre[n]) + float(ref_fre_lig[n]))
             #
             ref_pass_pub_shares     = [float(passpub_values[n])/Total_Demand[n] for n in range(len(time_range_vector))]
             ref_pass_priv_shares    = [float(passpriv_values[n])/Total_Demand[n] for n in range(len(time_range_vector))]
