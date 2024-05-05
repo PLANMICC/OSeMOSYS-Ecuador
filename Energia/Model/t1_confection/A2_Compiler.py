@@ -1004,6 +1004,64 @@ if accumulated_emission_data:
 if accumulated_emission_penalty_data:
     df_EmissionPenalty = pd.concat([df_EmissionPenalty, pd.DataFrame(accumulated_emission_penalty_data)], ignore_index=True)
 
+#
+# Extract data from DataFrame Emissions_csc_df to lists and repeat the process, updating df_Emissions and df_EmissionPenalty
+these_emissions = Emissions_csc_df['Emission'].tolist()
+these_e_techs = Emissions_csc_df['Tech'].tolist()
+these_e_values = Emissions_csc_df['EmissionActivityRatio'].tolist()
+these_e_penalty_factor = Emissions_csc_df['EmissionsPenalty_Factor'].tolist()
+
+# Prepare for accumulating data
+accumulated_emission_data = []
+accumulated_emission_penalty_data = []
+emission_unique_set = set()
+
+# Multi-year penalty factor preparation
+these_e_penalty_factor_multyr = {yr: deepcopy(Emissions_csc_df[yr]) for yr in time_range_vector}
+
+# Process emissions data
+for e in range(len(these_emissions)):
+    this_emission = these_emissions[e]
+    this_tech = these_e_techs[e]
+
+    for y in range(len(time_range_vector)):
+        year = time_range_vector[y]
+
+        # Accumulate EmissionActivityRatio data
+        accumulated_emission_data.append({
+            'PARAMETER': 'EmissionActivityRatio',
+            'Scenario': other_setup_params['Main_Scenario'],
+            'REGION': other_setup_params['Region'],
+            'TECHNOLOGY': this_tech,
+            'EMISSION': this_emission,
+            'MODE_OF_OPERATION': other_setup_params['Mode_of_Operation'],
+            'YEAR': year,
+            'Value': these_e_values[e]
+        })
+
+        # Calculate penalty only if the emission-year combination is unique
+        emission_year_key = f"{this_emission} {year}"
+        if emission_year_key not in emission_unique_set:
+            these_e_penalty = these_e_penalty_factor[e] * these_e_penalty_factor_multyr[year][e]
+            accumulated_emission_penalty_data.append({
+                'PARAMETER': 'EmissionsPenalty',
+                'Scenario': other_setup_params['Main_Scenario'],
+                'REGION': other_setup_params['Region'],
+                'TECHNOLOGY': '',  # Empty as per the structure for penalties
+                'EMISSION': this_emission,
+                'YEAR': year,
+                'Value': these_e_penalty
+            })
+            emission_unique_set.add(emission_year_key)
+
+# Bulk append for EmissionActivityRatio
+if accumulated_emission_data:
+    df_Emissions = pd.concat([df_Emissions, pd.DataFrame(accumulated_emission_data)], ignore_index=True)
+
+# Bulk append for EmissionsPenalty
+if accumulated_emission_penalty_data:
+    df_EmissionPenalty = pd.concat([df_EmissionPenalty, pd.DataFrame(accumulated_emission_penalty_data)], ignore_index=True)
+
 # Update the overall_param_df_dict
 overall_param_df_dict['EmissionActivityRatio'] = df_Emissions
 overall_param_df_dict['EmissionsPenalty'] = df_EmissionPenalty
