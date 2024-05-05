@@ -917,8 +917,12 @@ Emissions = pd.ExcelFile('./A2_Extra_Inputs/A-Xtra_Emissions.xlsx')
 # Emissions.sheet_names # see all sheet names // this only need thes wide format
 Emissions_ghg_df = Emissions.parse('GHGs')
 Emissions_ext_df = Emissions.parse('Externalities')
+Emissions_csc_df = Emissions.parse('Externalities_SCC')
 #
-emissions_list = list(set(Emissions_ghg_df['Emission'].tolist() + Emissions_ext_df['External Cost'].tolist()))
+emissions_list = list(set(
+    Emissions_ghg_df['Emission'].tolist() + \
+    Emissions_ext_df['External Cost'].tolist() + \
+    Emissions_csc_df['Emission'].tolist()))
 #
 df_Emissions = pd.DataFrame(columns = Wide_Param_Header)
 these_emissions = Emissions_ghg_df['Emission'].tolist()
