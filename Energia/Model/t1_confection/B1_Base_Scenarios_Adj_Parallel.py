@@ -2415,6 +2415,7 @@ if __name__ == '__main__':
         nonmotorized_range_indices = [i for i, x in enumerate(stable_scenarios[scenario_list[s]]['SpecifiedAnnualDemand'][this_set_type_initial]) if x == str('DEMTRN_NOMOT')]
 
         hfre_range_indices = [i for i, x in enumerate(stable_scenarios[scenario_list[s]]['SpecifiedAnnualDemand'][this_set_type_initial]) if x == str('DEMTRNFREHEA')]
+        mfre_range_indices = [i for i, x in enumerate(stable_scenarios[scenario_list[s]]['SpecifiedAnnualDemand'][this_set_type_initial]) if x == str('DEMTRNFREMED')]
         lfre_range_indices = [i for i, x in enumerate(stable_scenarios[scenario_list[s]]['SpecifiedAnnualDemand'][this_set_type_initial]) if x == str('DEMTRNFRELIG')]
         #
         # We will need to store the BAU data for later use.
@@ -2425,14 +2426,14 @@ if __name__ == '__main__':
             nonmotorized_values = deepcopy(stable_scenarios[scenario_list[s]]['SpecifiedAnnualDemand']['value'][nonmotorized_range_indices[0]:nonmotorized_range_indices[-1]+1])
             #
             ref_fre_hea = deepcopy(stable_scenarios[scenario_list[s]]['SpecifiedAnnualDemand']['value'][hfre_range_indices[0]:hfre_range_indices[-1]+1])
-            ref_fre_mfre = deepcopy(stable_scenarios[scenario_list[s]]['SpecifiedAnnualDemand']['value'][mfre_range_indices[0]:mfre_range_indices[-1]+1])
+            ref_fre_med = deepcopy(stable_scenarios[scenario_list[s]]['SpecifiedAnnualDemand']['value'][mfre_range_indices[0]:mfre_range_indices[-1]+1])
             ref_fre_lig = deepcopy(stable_scenarios[scenario_list[s]]['SpecifiedAnnualDemand']['value'][lfre_range_indices[0]:lfre_range_indices[-1]+1])
             #
             Total_Demand = []
             Total_Demand_Fre = []
             for n in range(len(time_range_vector)):
                 Total_Demand.append(float(passpub_values[n]) + float(passpriv_values[n]) + float (nonmotorized_values[n]))
-                Total_Demand_Fre.append(float(ref_fre_hea[n]) + float(ref_fre_mfre[n]) + float(ref_fre_lig[n]))
+                Total_Demand_Fre.append(float(ref_fre_hea[n]) + float(ref_fre_med[n]) + float(ref_fre_lig[n]))
             #
             ref_pass_pub_shares     = [float(passpub_values[n])/Total_Demand[n] for n in range(len(time_range_vector))]
             ref_pass_priv_shares    = [float(passpriv_values[n])/Total_Demand[n] for n in range(len(time_range_vector))]
@@ -2975,6 +2976,15 @@ if __name__ == '__main__':
             elasticity_Params_method_all = list(set(this_scenario_df['Method'].tolist()))[0]
             elasticity_Params_setIndex_all = list(set(this_scenario_df['Set_Index'].tolist()))[0]
             #
+            
+            print('check before changing the demand')
+            
+            this_param_indices = [i for i, x in enumerate(stable_scenarios['DDP']['SpecifiedAnnualDemand']['f']) if x == str('DEMTRNFREHEA')]
+            value_list = deepcopy(stable_scenarios['DDP']['SpecifiedAnnualDemand']['value'][this_param_indices[0]:this_param_indices[-1]+1])
+            value_list = [float(e) for e in value_list]
+            
+            # sys.exit()
+            
             for l0 in range(len(set_list_group)):
                 this_scenario_tech_df = this_scenario_df.loc[this_scenario_df['Set'] == set_list_group[l0]]
                 set_list = set_list_group_dict[set_list_group[l0]]
@@ -3012,6 +3022,16 @@ if __name__ == '__main__':
                                 #
                                 new_value_list = [round(value_list[e]*value_list_mult[e], 4) for e in range(len(value_list))]
                                 stable_scenarios[scenario_list[s]][param_list[p]]['value'][this_param_indices[0]:this_param_indices[-1]+1] = deepcopy(new_value_list)
+            
+            
+            print('check after changing the demand')
+            
+            this_param_indices = [i for i, x in enumerate(stable_scenarios['DDP']['SpecifiedAnnualDemand']['f']) if x == str('DEMTRNFREHEA')]
+            value_list = deepcopy(stable_scenarios['DDP']['SpecifiedAnnualDemand']['value'][this_param_indices[0]:this_param_indices[-1]+1])
+            value_list = [float(e) for e in value_list]
+            
+            # sys.exit()
+            
             #
             # Below we must adjust capacities:
             if elasticity_Params_method_all == 'Exact':
