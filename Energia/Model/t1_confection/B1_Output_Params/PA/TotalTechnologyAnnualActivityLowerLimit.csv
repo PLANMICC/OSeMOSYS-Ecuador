@@ -4453,7 +4453,7 @@ TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNTAXGSL,,,,2069,,,,,,8.9905
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNTAXGSL,,,,2070,,,,,,9.0012
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNMOTGSL,,,,2018,,,,,,3.6115
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNMOTGSL,,,,2019,,,,,,3.6052
-TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNMOTGSL,,,,2020,,,,,,3.3929
+TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNMOTGSL,,,,2020,,,,,,3.3244
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNMOTGSL,,,,2021,,,,,,3.5833
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNMOTGSL,,,,2022,,,,,,3.6312
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNMOTGSL,,,,2023,,,,,,3.679
@@ -4665,9 +4665,9 @@ TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSEDGSL,,,,2069,,,,,,14.2368
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSEDGSL,,,,2070,,,,,,14.2536
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVDSL,,,,2018,,,,,,0.1351
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVDSL,,,,2019,,,,,,0.1351
-TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVDSL,,,,2020,,,,,,0.134
-TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVDSL,,,,2021,,,,,,0.1274
-TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVDSL,,,,2022,,,,,,0.1207
+TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVDSL,,,,2020,,,,,,0.1237
+TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVDSL,,,,2021,,,,,,0.1267
+TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVDSL,,,,2022,,,,,,0.12
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVDSL,,,,2023,,,,,,0.1214
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVDSL,,,,2024,,,,,,0.1229
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVDSL,,,,2025,,,,,,0.1245
@@ -4718,7 +4718,7 @@ TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVDSL,,,,2069,,,,,,0.1664
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVDSL,,,,2070,,,,,,0.1666
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVHYBGSL,,,,2018,,,,,,0.0391
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVHYBGSL,,,,2019,,,,,,0.0357
-TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVHYBGSL,,,,2020,,,,,,0.0353
+TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVHYBGSL,,,,2020,,,,,,0.0329
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVHYBGSL,,,,2021,,,,,,0.0355
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVHYBGSL,,,,2022,,,,,,0.0359
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVHYBGSL,,,,2023,,,,,,0.0364
@@ -4771,7 +4771,7 @@ TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVHYBGSL,,,,2069,,,,,,0.0499
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVHYBGSL,,,,2070,,,,,,0.05
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVGSL,,,,2018,,,,,,5.766
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVGSL,,,,2019,,,,,,5.7679
-TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVGSL,,,,2020,,,,,,5.6879
+TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVGSL,,,,2020,,,,,,5.3187
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVGSL,,,,2021,,,,,,5.7329
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVGSL,,,,2022,,,,,,5.8096
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVGSL,,,,2023,,,,,,5.8861
@@ -4824,7 +4824,7 @@ TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVGSL,,,,2069,,,,,,8.0718
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNSUVGSL,,,,2070,,,,,,8.0814
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNCAMDSL,,,,2018,,,,,,0.7631
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNCAMDSL,,,,2019,,,,,,0.7634
-TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNCAMDSL,,,,2020,,,,,,0.7271
+TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNCAMDSL,,,,2020,,,,,,0.7039
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNCAMDSL,,,,2021,,,,,,0.7587
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNCAMDSL,,,,2022,,,,,,0.7689
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNCAMDSL,,,,2023,,,,,,0.779
@@ -4877,7 +4877,7 @@ TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNCAMDSL,,,,2069,,,,,,1.0683
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNCAMDSL,,,,2070,,,,,,1.0695
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNCAMGSL,,,,2018,,,,,,2.4505
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNCAMGSL,,,,2019,,,,,,2.3855
-TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNCAMGSL,,,,2020,,,,,,2.2673
+TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNCAMGSL,,,,2020,,,,,,2.1998
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNCAMGSL,,,,2021,,,,,,2.371
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNCAMGSL,,,,2022,,,,,,2.4028
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNCAMGSL,,,,2023,,,,,,2.4344
@@ -4930,7 +4930,7 @@ TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNCAMGSL,,,,2069,,,,,,3.3383
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNCAMGSL,,,,2070,,,,,,3.3423
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFREHEADSL,,,,2018,,,,,,4.9134
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFREHEADSL,,,,2019,,,,,,4.9036
-TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFREHEADSL,,,,2020,,,,,,4.5946
+TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFREHEADSL,,,,2020,,,,,,4.1836
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFREHEADSL,,,,2021,,,,,,4.7979
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFREHEADSL,,,,2022,,,,,,4.7979
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFREHEADSL,,,,2023,,,,,,5.1644
@@ -4983,7 +4983,7 @@ TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFREHEADSL,,,,2069,,,,,,13.658
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFREHEADSL,,,,2070,,,,,,13.9182
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFREMEDDSL,,,,2018,,,,,,4.9124
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFREMEDDSL,,,,2019,,,,,,4.9026
-TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFREMEDDSL,,,,2020,,,,,,4.5884
+TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFREMEDDSL,,,,2020,,,,,,4.1828
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFREMEDDSL,,,,2021,,,,,,4.7969
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFREMEDDSL,,,,2022,,,,,,4.7969
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFREMEDDSL,,,,2023,,,,,,5.1633
@@ -5036,7 +5036,7 @@ TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFREMEDDSL,,,,2069,,,,,,13.656
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFREMEDDSL,,,,2070,,,,,,13.9153
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFRELIGDSL,,,,2018,,,,,,3.4754
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFRELIGDSL,,,,2019,,,,,,3.4754
-TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFRELIGDSL,,,,2020,,,,,,3.3346
+TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFRELIGDSL,,,,2020,,,,,,2.9651
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFRELIGDSL,,,,2021,,,,,,3.4005
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFRELIGDSL,,,,2022,,,,,,3.4005
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFRELIGDSL,,,,2023,,,,,,3.6602
@@ -5089,7 +5089,7 @@ TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFRELIGDSL,,,,2069,,,,,,9.6806
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFRELIGDSL,,,,2070,,,,,,9.8644
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFRELIGGSL,,,,2018,,,,,,6.878
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFRELIGGSL,,,,2019,,,,,,6.6441
-TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFRELIGGSL,,,,2020,,,,,,6.3231
+TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFRELIGGSL,,,,2020,,,,,,5.6687
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFRELIGGSL,,,,2021,,,,,,6.5009
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFRELIGGSL,,,,2022,,,,,,6.5009
 TotalTechnologyAnnualActivityLowerLimit,DDP,ECU,TRNFRELIGGSL,,,,2023,,,,,,6.9974
