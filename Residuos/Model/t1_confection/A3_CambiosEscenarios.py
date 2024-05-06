@@ -60,6 +60,7 @@ encab=AUX.LeerHeaders(hoja1)
 years=AUX.LeerCol(hoja1, encab[0])
 for i in range(1,len(encab)):
      df_Energy_output = pd.read_csv("A2_Output_Params/"+encab[i].split(";")[1]+"/TotalTechnologyAnnualActivityLowerLimit.csv", index_col=None, header=0, low_memory=False)
+     df_Energy_output2 = pd.read_csv("A2_Output_Params/"+encab[i].split(";")[1]+"/TotalTechnologyAnnualActivityUpperLimit.csv", index_col=None, header=0, low_memory=False)
      lista1=list(df_Energy_output.columns)
      #print(lista1)
      col=AUX.LeerCol(hoja1,encab[i])
@@ -71,14 +72,21 @@ for i in range(1,len(encab)):
      dic3=dict(zip(years,col2))
      
      for j in range(len(df_Energy_output)):
-         if df_Energy_output["TECHNOLOGY"][j]==encab[i].split(";")[0]:
-             if encab[i].split(";")[0]!="LANDFILL_ELEC":
-                 df_Energy_output["Value"][j]=dic[df_Energy_output["YEAR"][j]]*dic3[df_Energy_output["YEAR"][j]]
-             else:
-                 df_Energy_output["Value"][j]=dic[df_Energy_output["YEAR"][j]]
+         if encab[i].split(";")[0] not in []:#['NO_CONTR_OD','LANDFILL']:
+             if df_Energy_output["TECHNOLOGY"][j]==encab[i].split(";")[0]:
+                 if encab[i].split(";")[0]!="LANDFILL_ELEC":
+                     df_Energy_output["Value"][j]=dic[df_Energy_output["YEAR"][j]]*dic3[df_Energy_output["YEAR"][j]]
+                 else:
+                     df_Energy_output["Value"][j]=dic[df_Energy_output["YEAR"][j]]
+         # else:
+         #      if df_Energy_output["TECHNOLOGY"][j]==encab[i].split(";")[0] and df_Energy_output2["TECHNOLOGY"][j]==encab[i].split(";")[0]:
+         #          df_Energy_output["Value"][j]=dic[df_Energy_output["YEAR"][j]]*dic3[df_Energy_output["YEAR"][j]]
+         #          df_Energy_output2["Value"][j]=dic[df_Energy_output["YEAR"][j]]*dic3[df_Energy_output["YEAR"][j]]
             
     
      df_Energy_output.to_csv("A2_Output_Params/"+encab[i].split(";")[1]+"/TotalTechnologyAnnualActivityLowerLimit.csv", index = None, header=True)
+     #df_Energy_output2.to_csv("A2_Output_Params/"+encab[i].split(";")[1]+"/TotalTechnologyAnnualActivityUpperLimit.csv", index = None, header=True)
+     
 
 
 # Hoja del TotalTechnologyAnnualActivityUpperLimit

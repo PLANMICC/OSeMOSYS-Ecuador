@@ -63,7 +63,7 @@ def main_executer(n1, packaged_useful_elements, scenario_list_print):
     data_file = case_address.replace('./','').replace('/','\\') + '\\' + str(this_case[0])
     output_file = case_address.replace('./','').replace('/','\\') + '\\' + str(this_case[0]).replace('.txt','') + '_output' + '.txt'
     #
-    str2 = "glpsol -m OSeMOSYS_Model.txt -d " + str(data_file)  +  " -o " + str(output_file)
+    str2 = "glpsol -m OSeMOSYS_Model.txt -d " + str(data_file)  +  " -o " + str(output_file)#+' --nopresol'
     os.system(str1 and str2)
     time.sleep(1)
     #
