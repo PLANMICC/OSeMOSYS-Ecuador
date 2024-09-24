@@ -61,7 +61,7 @@ def interp_max_cap(x):
 def main_executer(n1, packaged_useful_elements, scenario_list_print, start1):
     set_first_list(scenario_list_print)
     file_aboslute_address = os.path.abspath("B1_Base_Scenarios.py")
-    file_adress = re.escape(file_aboslute_address.replace('B1_Base_Scenarios.py', '')).replace('\:', ':')
+    file_adress = re.escape(file_aboslute_address.replace('B1_Base_Scenarios.py', ''))
     #
     case_address = file_adress + r'Executables\\' + str(first_list[n1])
     this_case = [e for e in os.listdir(case_address) if '.txt' in e]
